@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AutosService } from '../../services/autos/autos.service';
-import { SensoresService } from '../../services/sensores/sensores.service';
+import { AutosService } from '../../services/autos.service';
+import { SensoresService } from '../../services/sensores.service';
 
 @Component({
   selector: 'app-admin',

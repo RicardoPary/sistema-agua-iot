@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { SensoresService } from '../../services/sensores/sensores.service';
+import { SensoresService } from '../../services/sensores.service';
 
 @Component({
   selector: 'app-dibujo',

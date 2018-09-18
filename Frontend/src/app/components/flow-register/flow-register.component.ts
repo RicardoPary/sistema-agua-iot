@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { EstadosService } from '../../services/estados/estados.service';
+import { EstadosService } from '../../services/estados.service';
 
 @Component({
   selector: 'app-flow-register',

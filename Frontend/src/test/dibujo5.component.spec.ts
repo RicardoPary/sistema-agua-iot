@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SemaphoreGroupComponent } from './semaphore-group.component';
+import { Dibujo5Component } from '../app/components/dibujo5/dibujo5.component';
 
-describe('SemaphoreGroupComponent', () => {
-  let component: SemaphoreGroupComponent;
-  let fixture: ComponentFixture<SemaphoreGroupComponent>;
+describe('Dibujo5Component', () => {
+  let component: Dibujo5Component;
+  let fixture: ComponentFixture<Dibujo5Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SemaphoreGroupComponent ]
+      declarations: [ Dibujo5Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SemaphoreGroupComponent);
+    fixture = TestBed.createComponent(Dibujo5Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

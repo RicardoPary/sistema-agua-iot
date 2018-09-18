@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MultasRegistroComponent } from './multas-registro.component';
+import { SemaphoreGroupComponent } from '../app/components/semaphore-group/semaphore-group.component';
 
-describe('MultasRegistroComponent', () => {
-  let component: MultasRegistroComponent;
-  let fixture: ComponentFixture<MultasRegistroComponent>;
+describe('SemaphoreGroupComponent', () => {
+  let component: SemaphoreGroupComponent;
+  let fixture: ComponentFixture<SemaphoreGroupComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MultasRegistroComponent ]
+      declarations: [ SemaphoreGroupComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MultasRegistroComponent);
+    fixture = TestBed.createComponent(SemaphoreGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,16 +1,16 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { MysqlService } from './mysql.service';
+import { PostService } from '../app/services/post.service';
 
-describe('MysqlService', () => {
+describe('PostService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [MysqlService]
+      providers: [PostService]
     });
   });
 
-  it('should ...', inject([MysqlService], (service: MysqlService) => {
+  it('should ...', inject([PostService], (service: PostService) => {
     expect(service).toBeTruthy();
   }));
 });
