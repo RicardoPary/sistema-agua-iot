@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { EstadosService } from '../../services/estados/estados.service';
-import { Router,ActivatedRoute} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {EstadosService} from '../../services/estados/estados.service';
+import {Router, ActivatedRoute} from '@angular/router';
 
 
 @Component({
@@ -10,27 +10,52 @@ import { Router,ActivatedRoute} from '@angular/router';
 })
 export class DetalleEstadoComponent implements OnInit {
 
-  public id:any;
+  public id: any;
 
   estados: any = [];
-  constructor(private detalles: EstadosService,private route:ActivatedRoute, private router:Router) { 
-    
-   
+  verde: any;
+  amarillo: any;
+  rojo: any;
+  grupo: any;
+  ideditado: any;
+  grupoeditado: any;
+
+
+  rojoeditado: any;
+  amarilloeditado: any;
+  verdeeditado
+
+
+  constructor(private detalles: EstadosService, private route: ActivatedRoute, private router: Router) {
+
+
   }
 
   ngOnInit() {
-     this.route.queryParams.subscribe(
-          (queryParams:any)=>{   
-            this.id=queryParams['id'];  
-          }
-        );       
-  	  this.detalles.getGrupo(this.id).subscribe(estados => {
+    this.route.queryParams.subscribe(
+      (queryParams: any) => {
+        this.id = queryParams['id'];
+      }
+    );
+    this.detalles.getGrupo(this.id).subscribe(estados => {
       this.estados = estados;
-  	  });
-
-
+    });
 
 
   }
 
+  updateEstado2(value: any) {
+
+
+  }
+
+  deleteEstado(estado: any) {
+
+  }
+
+  addEstado(event) {
+  }
+
+  updateEstado() {
+  }
 }

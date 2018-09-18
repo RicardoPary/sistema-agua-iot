@@ -34,7 +34,7 @@ app.use('/api', api);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../Frontend/dist/index.html'));
+  res.sendFile(path.join(__dirname, '../Frontend/dist/Frontend/index.html'));
 });
 
 const port = process.env.PORT || '3000';

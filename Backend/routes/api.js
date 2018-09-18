@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-var db="mongodb://localhost/smart_city";
+var db="mongodb://localhost/agua-iot";
 
 var mongojs = require('mongojs');
 var flujo  = mongojs(db, ['flujo']);
