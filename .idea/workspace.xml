@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b27d6fa0-7187-4527-9e4a-926c7429441c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/admin/admin.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/admin.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/admin/admin.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/car-register/car-register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/car-register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/car-register/car-register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/car-register/car-register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/detalle-autos/detalle-autos.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/detalle-autos.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/detalle-autos/detalle-autos.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/detalle-autos/detalle-autos.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/detalle-estado/detalle-estado.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/detalle-estado.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/detalle-estado/detalle-estado.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/detalle-estado/detalle-estado.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/diagramas/diagramas.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/diagramas.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo/dibujo.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/dibujo.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo/dibujo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/dibujo/dibujo.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo2/dibujo2.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/dibujo2.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo2/dibujo2.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/dibujo2/dibujo2.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo3/dibujo3.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/dibujo3.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo3/dibujo3.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/dibujo3/dibujo3.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo4/dibujo4.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/dibujo4.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo4/dibujo4.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/dibujo4/dibujo4.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/dibujo5.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/flow-register/flow-register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/flow-register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/flow-register/flow-register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/flow-register/flow-register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/flujo-registro/flujo-registro.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/flujo-registro.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/flujo-registro/flujo-registro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/flujo-registro/flujo-registro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/graphics/graphics.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/graphics.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/graphics/graphics.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/graphics/graphics.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/maps/maps.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/maps.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/multas-registro/multas-registro.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/multas-registro.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/multas-registro/multas-registro.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/multas-registro/multas-registro.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/new-article/new-article.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/new-article.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/semaphore-group/semaphore-group.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/semaphore-group.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/semaphore-group/semaphore-group.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/semaphore-group/semaphore-group.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/semaphore-time/semaphore-time.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/semaphore-time.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/semaphore-time/semaphore-time.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/semaphore-time/semaphore-time.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/sensor-register/sensor-register.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/sensor-register.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/sensor-register/sensor-register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/components/sensor-register/sensor-register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/autos/autos.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/autos.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/autos/autos.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/services/autos.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/estados/estados.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/estados.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/estados/estados.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/services/estados.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/msql/mysql.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/mysql.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/msql/mysql.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/services/mysql.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/post/post.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/post.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/post/post.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/services/post.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/sensores/sensores.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/test/sensores.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/services/sensores/sensores.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/services/sensores.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,28 +25,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="2" />
+          <entry key="html" value="3" />
           <entry key="js" value="2" />
-          <entry key="scss" value="1" />
+          <entry key="scss" value="2" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="3" />
           <entry key="JavaScript" value="2" />
-          <entry key="SCSS" value="1" />
+          <entry key="SCSS" value="2" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="14" />
           <entry key="js" value="18" />
           <entry key="ts" value="120" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="14" />
           <entry key="JavaScript" value="18" />
           <entry key="TypeScript" value="120" />
         </counts>
@@ -114,11 +71,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Backend/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,6 +163,7 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/components/semaphore-time/semaphore-time.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/detalle-estado/detalle-estado.component.ts" />
         <option value="$PROJECT_DIR$/Backend/server.js" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/app.component.html" />
       </list>
     </option>
   </component>
@@ -284,17 +263,18 @@
       <option name="presentableId" value="Default" />
       <updated>1537237044040</updated>
       <workItem from="1537237046283" duration="339000" />
-      <workItem from="1537237734609" duration="1614000" />
+      <workItem from="1537237734609" duration="1729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1953000" />
+    <option name="totallyTimeSpent" value="2068000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="10" width="1456" height="804" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26920366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26920366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -306,8 +286,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.27623457" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25925925" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.25154322" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25925925" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -372,6 +352,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="115" selection-start-line="4" selection-start-column="115" selection-end-line="4" selection-end-column="115" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
