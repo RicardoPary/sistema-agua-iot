@@ -34,6 +34,9 @@ import {routing} from './routes';
 import {ChartsModule} from 'ng2-charts';
 import {Angular2FontawesomeModule} from 'angular2-fontawesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     DetalleAutosComponent,
     FlujoRegistroComponent,
     MultasRegistroComponent,
-    NewArticleComponent
+    NewArticleComponent,
+    SidebarComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

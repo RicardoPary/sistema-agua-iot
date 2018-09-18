@@ -1,0 +1,82 @@
+<!--side menu-->
+<div class="col-md-2 col-sm-1 hidden-xs-down display-table-cell valign-top" id="side-menu">
+  <h1 class="hidden-sm-down hidden-xs-down">Navigation</h1>
+  <ul class="nav flex-column">
+
+    <li class="link active">
+      <a routerLink="/admin">
+        <i class="fa fa-windows" aria-hidden="true"></i>
+        <span class="hidden-sm-down hidden-xs-down">Dashboard</span>
+      </a>
+    </li>
+
+    <li class="link">
+
+      <a href="#collapse-comments" data-toggle="collapse" aria-controls="collapse-comments">
+
+
+        <i class="fa fa-database" aria-hidden="true"></i>
+        <span class="hidden-sm-down hidden-xs-down">Articles</span>
+
+
+        <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
+      </a>
+      <ul class="collapse collapseable" id="collapse-comments">
+        <li><a routerLink="/tareas">Semaphores</a></li>
+        <li><a routerLink="/contactos">Multas</a></li>
+        <li><a routerLink="/flujos">Flujos</a></li>
+        <li><a routerLink="/semaforos">Grupos</a></li>
+        <li><a routerLink="/maps">Mapa</a></li>
+        <li><a routerLink="/flujohistorial">Historial Flujo</a></li>
+        <li><a routerLink="/multashistorial">Historial Multas</a></li>
+      </ul>
+    </li>
+
+    <li class="link">
+      <a href="#collapse-comments2" data-toggle="collapse" aria-controls="collapse-comments2">
+        <i class="fa fa-car" aria-hidden="true"></i>
+        <span class="hidden-sm-down hidden-xs-down">Comments</span>
+        <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
+      </a>
+      <ul class="collapse collapseable" id="collapse-comments2">
+        <li><a routerLink="/contactos">Contacts</a></li>
+      </ul>
+    </li>
+
+    <li class="link">
+      <a href="#collapse-comments2" data-toggle="collapse" aria-controls="collapse-comments2">
+        <i class="fa fa-car" aria-hidden="true"></i>
+        <span class="hidden-sm-down hidden-xs-down">Commenters</span>
+        <span class="badge badge-warning pull-right hidden-sm-down hidden-xs-down">20</span>
+      </a>
+      <ul class="collapse collapseable" id="collapse-comments2">
+        <li><a routerLink="/contactos">Contacts</a></li>
+      </ul>
+    </li>
+
+    <li class="link">
+      <a href="#collapse-comments22" data-toggle="collapse" aria-controls="collapse-comments22">
+        <i class="fa fa-car" aria-hidden="true"></i>
+        <span class="hidden-sm-down hidden-xs-down">Tags</span>
+        <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
+      </a>
+      <ul class="collapse collapseable" id="collapse-comments22">
+        <li><a routerLink="/new-article">New Article</a></li>
+      </ul>
+    </li>
+
+    <li class="link settings-btn">
+      <a href="#collapse-contaminations" data-toggle="collapse" aria-controls="collapse-contaminations">
+        <i class="fa fa-area-chart" aria-hidden="true"></i>
+        <span class="hidden-sm-down hidden-xs-down">Settings</span>
+        <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
+      </a>
+      <ul class="collapse collapseable" id="collapse-contaminations">
+        <li><a routerLink="/autos">Graphics</a></li>
+        <li><a routerLink="/contaminacion">Table Contamination</a></li>
+      </ul>
+    </li>
+
+
+  </ul>
+</div>
