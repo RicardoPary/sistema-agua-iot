@@ -1,4 +1,4 @@
-import {Semaphore} from './../../clases/semaphore';
+import {Semaphore} from '../../models/semaphore';
 import {Component, OnInit} from '@angular/core';
 import {EstadosService} from '../../services/estados.service';
 

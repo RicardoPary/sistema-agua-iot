@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Marker } from '../../interfaces/marker'
+
+export interface Marker {
+  nombre?:string;
+  lati:number;
+  longi:number;
+  arrastrable:boolean;
+}
 
 @Component({
   selector: 'app-maps',
