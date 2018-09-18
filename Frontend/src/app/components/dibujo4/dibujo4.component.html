@@ -1,0 +1,16 @@
+
+  <div class="col-md-12">  
+    <div style="display: block">
+    <canvas baseChart width="418" height="209"
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [colors]="lineChartColors"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+   </div>
+  </div>
+
+

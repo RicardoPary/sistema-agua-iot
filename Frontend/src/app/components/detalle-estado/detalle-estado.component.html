@@ -1,0 +1,150 @@
+<div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px;">
+	<div class="x_panel">
+		<div class="x_title">
+			<h1 style="font-size: 20px; float: left;">TABLA DE SEMAFOROS</h1>
+			<ul class="nav navbar-right panel_toolbox">				
+				<li>
+				<button data-toggle="modal" data-target="#miModal2" style="border: none; background-color: none;">
+				<i class="fa fa-plus" aria-hidden="true"></i>
+				</button>	
+				</li>
+				<li>
+				<a class="collapse-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				<i class="fa fa-chevron-up"></i>
+				</a>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-wrench"></i>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Settings 1</a></li>
+						<li><a href="#">Settings 2</a></li>
+					</ul>
+				</li>
+				<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="x_content">
+			<p>Esta tabla muestra el estado de tiempo de cada semaforo correspondiente a distintos grupos</p>
+			<div class="table-responsive collapse show" id="collapseExample">
+				<table class="table table-striped jambo_table bulk_action ">
+					<thead>
+						<tr class="headings">
+							<th>Id</th>
+							<th>Rojo</th>
+							<th>Amarillo</th>
+							<th>Verde</th>
+							<th>Grupo</th>
+							<th>Sonido</th>
+							<th>Humo</th>			
+							<th class="column-title no-link last" colspan="3"><span class="nobr">Acciones</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let estado of estados">
+							<td>{{estado._id}}</td>
+							<td>{{estado.rojo}} seg.</td>
+							<td>{{estado.amarillo}} seg.</td>
+							<td>{{estado.verde}} seg.</td>
+							<td>{{ estado.grupo }}</td>
+							<th>99%</th>
+							<th>60%</th>
+							<td>
+							<button (click)="updateEstado2(estado)" style="border: none; background-color: none;" data-toggle="modal" data-target="#miModal">	
+							<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
+							</button>
+							</td>
+							<td>
+							<button (click)="deleteEstado(estado._id)" style="border: none; background-color: none;">
+							<i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+							</button>
+							</td>
+							<td>
+							<a routerLink="/detalle" [queryParams]="{id:estado._id}">
+							<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+							</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+				<div class="modal-header">		
+				<h4 class="modal-title" id="myModalLabel">{{ideditado}}</h4>
+				</div>
+				<div class="modal-body">
+ 					<div class="form-group">
+   			 	<label for="rojo">Rojo</label>
+					<input type="text"  [(ngModel)]="rojoeditado" name="rojoeditado" class="form-control input-sm">  
+  				</div>
+				  <div class="form-group">
+					<label for="amarillo">Amarillo</label>
+					<input type="text"  [(ngModel)]="amarilloeditado" name="amarilloeditado" class="form-control input-sm">    
+					</div>
+					<div class="form-group">
+					<label for="verde">Verde</label>
+					<input type="text"  [(ngModel)]="verdeeditado" name="verdeeditado" class="form-control input-sm">   
+					</div>
+					<div class="form-group">
+					<label for="grupo">Grupo</label>
+					<input type="text"  [(ngModel)]="grupoeditado" name="grupoeditado" class="form-control input-sm">    
+					</div>					
+					<input type="button" value="Aceptar" class="btn btn-danger btn-sm" (click)="updateEstado()" data-dismiss="modal">
+					<input type="button" value="Cancelar" class="btn btn-danger btn-sm" data-dismiss="modal">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">	
+		  <h4 class="modal-title" id="myModalLabel">Crear Nuevo</h4>
+			</div>
+			<div class="modal-body"> 
+			<div class="form-group">
+			<label for="rojo">Rojo</label>
+			<input type="text"  [(ngModel)]="rojo" name="rojoeditado" class="form-control input-sm">  
+			</div>
+			<div class="form-group">
+			<label for="amarillo">Amarillo</label>
+			<input type="text"  [(ngModel)]="amarillo" name="amarilloeditado" class="form-control input-sm">    
+			</div>
+			<div class="form-group">
+			<label for="verde">Verde</label>
+			<input type="text"  [(ngModel)]="verde" name="verdeeditado" class="form-control input-sm">   
+			</div>
+			<div class="form-group">
+			<label for="grupo">Grupo</label>
+			<input type="text"  [(ngModel)]="grupo" name="grupoeditado" class="form-control input-sm">    
+			</div>					
+			<input type="button" value="Aceptar" class="btn btn-danger btn-sm" (click)="addEstado($event)" data-dismiss="modal">
+			<input type="button" value="Cancelar" class="btn btn-danger btn-sm" data-dismiss="modal">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

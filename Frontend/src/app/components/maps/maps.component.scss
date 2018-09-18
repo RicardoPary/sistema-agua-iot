@@ -1,0 +1,232 @@
+.sebm-google-map-container {
+  height: 400px;
+}
+
+.x_panel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    opacity: 1;
+    transition: all .2s ease
+}
+.x_title {
+    border-bottom: 2px solid #E6E9ED;
+    padding: 1px 5px 6px;
+    margin-bottom: 10px
+}
+.x_title .filter {
+    width: 40%;
+    float: right
+}
+.x_title h2 {
+    margin: 5px 0 6px;
+    float: left;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+.x_title h2 small {
+    margin-left: 10px
+}
+.x_title span {
+    color: #BDBDBD
+}
+.x_content {
+    padding: 0 5px 6px;
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 5px
+}
+.x_content h4 {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.navbar {
+    margin-bottom: 0
+}
+.navbar-header {
+    background: #34495E
+}
+.navbar-right {
+    margin-right: 0
+}
+.top_nav .navbar-right {
+    margin: 0;
+    width: 70%;
+    float: right
+}
+.top_nav .navbar-right li {
+    display: inline-block;
+    float: right;
+    position: static
+}
+
+
+.panel_toolbox {
+    float: right;
+    min-width: 70px
+}
+.panel_toolbox>li {
+    float: left;
+    cursor: pointer
+}
+.panel_toolbox>li>a {
+    padding: 5px;
+    color: #C5C7CB;
+    font-size: 14px
+}
+.panel_toolbox>li>a:hover {
+    background: #F5F7FA
+}
+
+.dropdown-menu.msg_list span {
+    white-space: normal
+}
+.dropdown-menu {
+    border: medium none;
+    box-shadow: none;
+    display: none;
+    float: left;
+    font-size: 12px;
+    left: 0;
+    list-style: none outside none;
+    padding: 0;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+    z-index: 9998;
+    border: 1px solid #D9DEE4;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+.dropdown-menu>li>a {
+    color: #5A738E
+}
+.navbar-nav .open .dropdown-menu {
+    position: absolute;
+    background: #fff;
+    margin-top: 0;
+    border: 1px solid #D9DEE4;
+    right: 0;
+    left: auto;
+    width: 220px
+}
+.navbar-nav .open .dropdown-menu.msg_list {
+    width: 300px
+}
+
+table.jambo_table {
+    border: 1px solid rgba(221, 221, 221, 0.78)
+}
+table.jambo_table thead {
+    background: #2f4050;
+    color: #ECF0F1
+}
+table.jambo_table tbody tr:hover td {
+    background: rgba(38, 185, 154, 0.07);
+    border-top: 1px solid rgba(38, 185, 154, 0.11);
+    border-bottom: 1px solid rgba(38, 185, 154, 0.11)
+}
+table.jambo_table tbody tr.selected {
+    background: rgba(38, 185, 154, 0.16)
+}
+table.jambo_table tbody tr.selected td {
+    border-top: 1px solid rgba(38, 185, 154, 0.4);
+    border-bottom: 1px solid rgba(38, 185, 154, 0.4)
+}
+.dataTables_paginate a {
+    background: #ff0000
+}
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+    zoom: 1
+}
+.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 30px;
+    margin-left: -125px;
+    margin-top: -15px;
+    padding: 14px 0 2px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    background-color: white
+}
+.dataTables_length {
+    width: 40%;
+    float: left
+}
+.dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right
+}
+.dataTables_info {
+    width: 60%;
+    float: left
+}
+.dataTables_paginate {
+    float: right;
+    text-align: right
+}
+table.dataTable th.focus,
+table.dataTable td.focus {
+    outline: 2px solid #1ABB9C !important;
+    outline-offset: -1px
+}
+table.display {
+    margin: 0 auto;
+    clear: both;
+    width: 100%
+}
+table.display thead th {
+    padding: 8px 18px 8px 10px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    cursor: pointer
+}
+table.display tfoot th {
+    padding: 3px 18px 3px 10px;
+    border-top: 1px solid black;
+    font-weight: bold
+}
+table.display tr.heading2 td {
+    border-bottom: 1px solid #aaa
+}
+table.display td {
+    padding: 3px 10px
+}
+table.display td.center {
+    text-align: center
+}
+table.display thead th:active,
+table.display thead td:active {
+    outline: none
+}
+.dataTables_scroll {
+    clear: both
+}
+.dataTables_scrollBody {
+    *margin-top: -1px;
+    -webkit-overflow-scrolling: touch
+}
+
+
+
+
+

@@ -1,0 +1,196 @@
+<div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px;">
+	<div class="x_panel">
+		<div class="x_title">
+			<h1 style="font-size: 20px; float: left;">TABLE SEMAPHORES</h1>
+			<ul class="nav navbar-right panel_toolbox">				
+				<li>
+				<button data-toggle="modal" data-target="#miModal2" style="border: none; background-color: none;">
+				<i class="fa fa-plus" aria-hidden="true"></i>
+				</button>	
+				</li>
+				<li>
+				<a class="collapse-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				<i class="fa fa-chevron-up"></i>
+				</a>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-wrench"></i>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Settings 1</a></li>
+						<li><a href="#">Settings 2</a></li>
+					</ul>
+				</li>
+				<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="x_content">
+			
+			<div class="table-responsive collapse show" id="collapseExample">
+				<table class="table table-striped jambo_table bulk_action ">
+					<thead>
+						<tr class="headings">
+							<th>Rojo</th>
+							<th>Amarillo</th>
+							<th>Verde</th>
+							<th>Grupo</th>
+							<th>Flujo</th>
+							<th>Latitud</th>
+							<th>Longitud</th>
+							<th>Cantidad</th>
+							<th>Prioridad</th>			
+							<th class="column-title no-link last" colspan="3"><span class="nobr">Acciones</span></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let sem of semaforos">
+							<td>{{ sem.rojo }} seg.</td>
+							<td>{{ sem.amarillo }} seg.</td>
+							<td>{{ sem.verde }} seg.</td>
+							<td>{{ sem.grupo }}</td>
+							<td>{{ sem.flujo }}</td>
+							<td>{{ sem.latitud }}</td>
+							<td>{{ sem.longitud }}</td>
+							<td>
+								<a routerLink="/detalleflujo" [queryParams]="{grupo:sem.grupo,flujo:sem.flujo}" style="text-decoration:none;color:darkgreen">					
+								<i class="fa fa-car fa-lg" style="color:darkgreen"></i>						
+								{{ getFlujos2(sem.grupo,sem.flujo) }}																	
+								</a>								
+							</td>
+							<td>{{ getFlujos3(sem.grupo,sem.flujo) }}</td>
+							<td>
+							
+							<button (click)="updateEstado2(sem)" style="border: none; background-color: none;" data-toggle="modal" data-target="#miModal">	
+							<i class="fa fa-pencil-square fa-lg" aria-hidden="true" style="color:#2F4050"></i>
+							</button>
+
+							</td>
+							<td>
+							
+							<button (click)="deleteSemaforo(sem._id)" style="border: none; background-color: none;">
+							<i class="fa fa-trash fa-lg" aria-hidden="true" style="color:#2F4050"></i>
+							</button>
+							
+							</td>
+							<td>
+							<!--<a routerLink="/detalle" [queryParams]="{id:sem._id}">
+							<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+							</a>-->
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<app-maps></app-maps>
+
+
+
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">	
+		  	<h4 class="modal-title" id="myModalLabel">Modificar</h4>
+			</div>
+			<div class="modal-body"> 
+
+			<div class="form-group">
+			<label for="rojo">Rojo</label>
+			<input type="number"  [(ngModel)]="semaforo.rojo" id="rojo" class="form-control input-sm">  
+			</div>
+
+			<div class="form-group">
+			<label for="amarillo">Amarillo</label>
+			<input type="number"  [(ngModel)]="semaforo.amarillo" id="amarillo" class="form-control input-sm">    
+			</div>
+
+			<div class="form-group">
+			<label for="verde">Verde</label>
+			<input type="number"  [(ngModel)]="semaforo.verde" id="verde" class="form-control input-sm">   
+			</div>
+ 
+			<div class="form-group">
+			<label for="grupo">Grupo</label>
+			<input type="number"  [(ngModel)]="semaforo.grupo" id="grupo" class="form-control input-sm">    
+			</div>			
+
+			<div class="form-group">
+			<label for="flujo">Flujo</label>
+			<input type="number"  [(ngModel)]="semaforo.flujo" id="flujo" class="form-control input-sm">    
+			</div>	
+
+			<div class="form-group">
+			<label for="latitud">Latitud</label>
+			<input type="number"  [(ngModel)]="semaforo.latitud" id="latitud" class="form-control input-sm">    
+			</div>
+
+			<div class="form-group">
+			<label for="longitud">Longitud</label>
+			<input type="number"  [(ngModel)]="semaforo.longitud" id="longitud" class="form-control input-sm">    
+			</div>
+
+			<input type="button" value="Aceptar" class="btn btn-danger btn-sm" (click)="updateEstado($event)" data-dismiss="modal">
+			<input type="button" value="Cancelar" class="btn btn-danger btn-sm" data-dismiss="modal">
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="miModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">	
+		  	<h4 class="modal-title" id="myModalLabel">Crear Nuevo</h4>
+			</div>
+			<div class="modal-body"> 
+
+			<div class="form-group">
+			<label for="rojo">Rojo</label>
+			<input type="number"  [(ngModel)]="semaforo.rojo" id="rojo" class="form-control input-sm">  
+			</div>
+
+			<div class="form-group">
+			<label for="amarillo">Amarillo</label>
+			<input type="number"  [(ngModel)]="semaforo.amarillo" id="amarillo" class="form-control input-sm">    
+			</div>
+
+			<div class="form-group">
+			<label for="verde">Verde</label>
+			<input type="number"  [(ngModel)]="semaforo.verde" id="verde" class="form-control input-sm">   
+			</div>
+ 
+			<div class="form-group">
+			<label for="grupo">Grupo</label>
+			<input type="number"  [(ngModel)]="semaforo.grupo" id="grupo" class="form-control input-sm">    
+			</div>			
+
+			<div class="form-group">
+			<label for="flujo">Flujo</label>
+			<input type="number"  [(ngModel)]="semaforo.flujo" id="flujo" class="form-control input-sm">    
+			</div>	
+
+			<div class="form-group">
+			<label for="latitud">Latitud</label>
+			<input type="number"  [(ngModel)]="semaforo.latitud" id="latitud" class="form-control input-sm">    
+			</div>
+
+			<div class="form-group">
+			<label for="longitud">Longitud</label>
+			<input type="number"  [(ngModel)]="semaforo.longitud" id="longitud" class="form-control input-sm">    
+			</div>
+
+			<input type="button" value="Aceptar" class="btn btn-danger btn-sm" (click)="addSemaforo($event)" data-dismiss="modal">
+			<input type="button" value="Cancelar" class="btn btn-danger btn-sm" data-dismiss="modal">
+			</div>
+		</div>
+	</div>
+</div>
+
+
