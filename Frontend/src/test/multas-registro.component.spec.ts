@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MultasRegistroComponent } from '../app/components/multas-registro/multas-registro.component';
+import { MultasRegistroComponent } from '../app/components/datos-turbiedad/datos-turbiedad.component';
 
 describe('MultasRegistroComponent', () => {
   let component: MultasRegistroComponent;

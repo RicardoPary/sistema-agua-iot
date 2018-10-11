@@ -2,311 +2,138 @@
   <!-- top tiles -->
   <div class="row tile_count">
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-user"></i> Minibus
+    <div class="one col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
+      <span class="count_top_c">
+      <i class="fa fa-clock-o"></i> Temperatura
       </span>
       <div class="count green">
       {{registro_flujo_minibus}}
-      <img src="../../../assets/images/minibus.jpg" width="70" height="38" style="margin-left:10px;"/>
+      <img src="../../../assets/tempe.jpg" style="width: 200px"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_minibus*100)/registro_flujo | number:'2.2' }}% </i> Now
+      <i class="green" >{{(registro_flujo_minibus*100)/registro_flujo | number:'2.2' }}°C </i> Ahora
       </span>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-clock-o"></i> Bus
+    <div class="two col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
+      <span class="count_top_c">
+      <i class="fa fa-clock-o"></i> pH
       </span>
       <div class="count">
       {{registro_flujo_bus}}
-      <img src="../../../assets/images/bus.png" width="70" height="38" style="margin-left:10px;"/>
+      <img src="../../../assets/ph.jpg"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_bus*100)/registro_flujo | number:'2.2' }}% </i> Now
+      <i class="green">{{(registro_flujo_bus*100)/registro_flujo | number:'2.2' }} </i> Ahora
       </span>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-user"></i> Particle Vehicle
+    <div class="three col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
+      <span class="count_top_c">
+      <i class="fa fa-clock-o"></i> Conductividad
       </span>
       <div class="count green">
       {{registro_flujo_particular}}
-      <img src="../../../assets/images/particular.png" width="70" height="38" style="margin-left:10px;"/>
+      <img src="../../../assets/conducti.jpg"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_particular*100)/registro_flujo | number:'2.2' }}% </i> Now
+      <i class="green">{{(registro_flujo_particular*100)/registro_flujo | number:'2.2' }}µS/cm </i> Ahora
       </span>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-clock-o"></i> Pesado
+    <div class="four col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
+      <span class="count_top_c">
+      <i class="fa fa-clock-o"></i> Sólidos Disueltos Totales
       </span>
       <div class="count">
       {{registro_flujo_pesado}}
-      <img src="../../../assets/images/pesado.jpg" width="70" height="38" style="margin-left:10px;"/>
+      <img src="../../../assets/sdt.jpg" />
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_pesado*100)/registro_flujo | number:'2.2' }}% </i> Now
+      <i class="green">{{(registro_flujo_pesado*100)/registro_flujo | number:'2.2' }}ppm </i> Ahora
       </span>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-user"></i> Ambulance
+    <div class="five col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
+      <span class="count_top_c">
+      <i class="fa fa-clock-o"></i> Salinidad
       </span>
       <div class="count green">
       {{registro_flujo_ambulancia}}
-      <img src="../../../assets/images/ambulancia.jpg" width="70" height="38" style="margin-left:10px;"/>
+      <img src="../../../assets/conducti.jpg"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_ambulancia*100)/registro_flujo | number:'2.2' }}% </i> Now
+      <i class="green">{{(registro_flujo_ambulancia*100)/registro_flujo | number:'2.2' }}PSU </i> Ahora
       </span>
     </div>
 
-
-    
-
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-user"></i> Police Trapol
+    <div class="six col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
+      <span class="count_top_c">
+      <i class="fa fa-clock-o"></i> Turbiedad
       </span>
       <div class="count green">
       {{registro_flujo_policia}}
-      <img src="../../../assets/images/policia.jpg" width="70" height="38" style="margin-left:10px;"/>
+      <img src="../../../assets/turbid.jpg"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_policia*100)/registro_flujo | number:'2.2' }}% </i> Now
+      <i class="green" >{{(registro_flujo_policia*100)/registro_flujo | number:'2.2' }}UNT </i> Ahora
       </span>
     </div>
 
-    
-
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-user"></i> Total Vehicles
-      </span>
-      <div class="count">{{registro_flujo}}</div>      
-    </div>
 
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
       <span class="count_top">
-      <i class="fa fa-user"></i> Total Infractions
+      <i class="fa fa-balance-scale"></i>  Prom. de temperatura
       </span>
-      <div class="count">{{registro_infracciones}}</div>      
+      <div class="count">{{registro_flujo}} °C</div>
+    </div>
+
+
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
+      <span class="count_top">
+      <i class="fa fa-balance-scale"></i> Promedio de pH
+      </span>
+      <div class="count">{{registro_infracciones}}</div>
     </div>
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
       <span class="count_top">
-      <i class="fa fa-user"></i> Contamination Ambiental
+      <i class="fa fa-balance-scale"></i>  Prom. de Conductividad
       </span>
-      <div class="count">{{promedio_sensores.humo}} %</div>      
+      <div class="count">{{promedio_sensores.humo}}µS/cm </div>
     </div>
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
       <span class="count_top">
-      <i class="fa fa-user"></i> Contamination Acustica
+      <i class="fa fa-balance-scale"></i>  Promedio de SDT
       </span>
-      <div class="count">{{promedio_sensores.sonido}} %</div>      
+      <div class="count">{{promedio_sensores.sonido}} ppm</div>
     </div>
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
       <span class="count_top">
-      <i class="fa fa-user"></i> Temperatura
+      <i class="fa fa-balance-scale"></i>  Prom. de Salinidad
       </span>
-      <div class="count">{{registro_infracciones}} %</div>      
+      <div class="count">{{registro_infracciones}}PSU </div>
     </div>
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
       <span class="count_top">
-      <i class="fa fa-user"></i> Contamination Etanol
+      <i class="fa fa-balance-scale"></i>  Prom. de Turbiedad
       </span>
-      <div class="count">{{registro_infracciones}} %</div>      
+      <div class="count">{{registro_infracciones}} UNT</div>
     </div>
 
   </div>
 
 
   <div class="row">
-
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-      <div class="x_panel tile fixed_height_320">
-
-        <div class="x_title">
-          <h2>Vehiculos</h2>
-          <ul class="nav navbar-right panel_toolbox">
-            <li>
-            <a data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"><i class="fa fa-chevron-up"></i></a>
-            </li>
-
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                <i class="fa fa-wrench"></i>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Settings 1</a></li>
-                <li><a href="#">Settings 2</a></li>
-              </ul>
-            </li>
-
-            <li><a class="close-link"><i class="fa fa-close"></i></a></li>
-
-          </ul>
-          <div class="clearfix"></div>
-        </div>
-
-        <div class="collapse show x_content" id="collapse1">
-          <h4>Cantidad de Autos</h4>
-
-          <br>
-
-          <div class="widget_summary">
-            <div class="w_left w_25"><span>Minibus</span></div>
-
-            <div class="w_center w_55">
-              <div class="progress">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_minibus*100)/registro_flujo) +'%'}">
-                  <span class="sr-only">66% Complete</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="w_right w_20"><span>{{(registro_flujo_minibus*100)/registro_flujo | number:'2.2' }} %</span></div>
-            <div class="clearfix"></div>
-          </div>
-
-
-          <div class="widget_summary">
-            <div class="w_left w_25"><span>Bus</span></div>
-            <div class="w_center w_55">
-              <div class="progress">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_bus*100)/registro_flujo) +'%'}">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div>
-            </div>
-            <div class="w_right w_20"><span>{{(registro_flujo_bus*100)/registro_flujo | number:'2.2' }} %</span></div>
-            <div class="clearfix"></div>
-          </div>
-
-          <div class="widget_summary">
-            <div class="w_left w_25"><span>Particular</span></div>
-            <div class="w_center w_55">
-              <div class="progress">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_particular*100)/registro_flujo) +'%'}">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div>
-            </div>
-            <div class="w_right w_20"><span>{{(registro_flujo_particular*100)/registro_flujo | number:'2.2' }} %</span></div>
-            <div class="clearfix"></div>
-          </div>
-
-          <div class="widget_summary">
-            <div class="w_left w_25"><span>Pesado</span></div>
-            <div class="w_center w_55">
-              <div class="progress">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_pesado*100)/registro_flujo) +'%'}">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div>
-            </div>
-            <div class="w_right w_20"><span>{{(registro_flujo_pesado*100)/registro_flujo | number:'2.2' }} %</span></div>
-            <div class="clearfix"></div>
-          </div>
-
-          <div class="widget_summary">
-            <div class="w_left w_25"><span>Ambulance</span></div>
-            <div class="w_center w_55">
-              <div class="progress">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_ambulancia*100)/registro_flujo) +'%'}">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div>
-            </div>
-            <div class="w_right w_20"><span>{{(registro_flujo_ambulancia*100)/registro_flujo | number:'2.2' }} %</span></div>
-            <div class="clearfix"></div>
-          </div>
-
-          <div class="widget_summary">
-            <div class="w_left w_25"><span>Police</span></div>
-            <div class="w_center w_55">
-              <div class="progress">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_policia*100)/registro_flujo) +'%'}">
-                  <span class="sr-only">60% Complete</span>
-                </div>
-              </div>
-            </div>
-            <div class="w_right w_20"><span>{{(registro_flujo_policia*100)/registro_flujo | number:'2.2' }} %</span></div>
-            <div class="clearfix"></div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-      <div class="x_panel tile fixed_height_320 overflow_hidden">
-        <div class="x_title">
-          <h2>Uso de Autos</h2>
-          <ul class="nav navbar-right panel_toolbox">
-            <li><a data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="fa fa-chevron-up"></i></a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Settings 1</a></li>
-                <li><a href="#">Settings 2</a></li>
-              </ul>
-            </li>
-            <li><a class="close-link"><i class="fa fa-close"></i></a></li>
-          </ul>
-          <div class="clearfix"></div>
-        </div>
-        <div class="collapse show x_content" id="collapse2">
-          <table class="" style="width:100%">
-            <tr>
-              <th style="width:37%;"><p>Top 5</p></th>
-              <th>
-                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7"><p class="">Auto</p></div>
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><p class="">Nro</p></div>
-              </th>
-            </tr>
-            <tr>
-              <td>
-                <app-dibujo></app-dibujo>
-              <!--  <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>-->
-              </td>
-              <td>
-                <table class="tile_info">
-                  <tr><td><p><i class="fa fa-square blue"></i>Minibus </p></td><td>30%</td></tr>
-                  <tr><td><p><i class="fa fa-square green"></i>Bus </p></td><td>10%</td></tr>
-                  <tr><td><p><i class="fa fa-square purple"></i>Micro </p></td><td>20%</td></tr>
-                  <tr><td><p><i class="fa fa-square aero"></i>Ambulancias </p></td><td>15%</td></tr>
-                  <tr><td><p><i class="fa fa-square red"></i>Patrulla </p></td><td>30%</td></tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
-
- </div>
-
-
-
-
-  <div class="row">
-
     <!-- Actividades recientes -->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
       <div class="x_panel">
         <div class="x_title">
-          <h2>Tecnologia Utilizada</h2>
+          <h2>Información Importante</h2>
           <ul class="nav navbar-right panel_toolbox">
             <li>
             <a data-toggle="collapse" href="#collapse10" aria-expanded="false" aria-controls="collapse10"><i class="fa fa-chevron-up"></i></a>
@@ -331,12 +158,12 @@
                 <div class="block">
                   <div class="block_content">
                     <h2 class="title">
-                      <a>Que es el Internet de las Cosas?</a>
+                      <a>Agua Potable</a>
                     </h2>
                     <div class="byline">
-                      <span>28-mayo-2017</span> by <a>Ricardo Pary</a>
+                      <span>diciembre-2010</span> por <a>NB 512</a>
                     </div>
-                    <p class="excerpt">Internet de las cosas (en inglés, Internet of things, abreviado IoT) es un concepto que se refiere a la interconexión digital de objetos cotidianos con internet. Alternativamente, Internet de las cosas es el punto en el tiempo en el que se conectarían a internet más cosas u objetos que personas.<a>Read&nbsp;More</a>
+                    <p class="excerpt">Aquella que por sus características organolépticas, físico-químicas, microbiológicas y radiactivas, se considera apta para el consumo humano y que cumple con lo establecido en la NB 512 y el presente Reglamento.
                     </p>
                   </div>
                 </div>
@@ -345,246 +172,198 @@
                 <div class="block">
                   <div class="block_content">
                     <h2 class="title">
-                      <a>Que son las Redes Neuronales?</a>
+                      <a>Internet de las Cosas</a>
                     </h2>
                     <div class="byline">
-                      <span>3-abril-2017</span> by <a>Ricardo Pary</a>
+                      <span>2011</span> por <a>CISCO-IBSG</a>
                     </div>
-                    <p class="excerpt">Las redes neuronales, tal como se utiliza en la inteligencia artificial, que tradicionalmente han sido considerados como modelos simplificados de procesamiento neural en el cerebro, a pesar de que la relación entre este modelo y la arquitectura biológica del cerebro se debate<a>Read&nbsp;More</a>
-                    </p>
+                    <p class="excerpt">Internet de las cosas es la red de cosas/dispositivos interconectados que están embebidos con sensores, software, conectividad de red y electrónica necesaria que les permite recopilar e intercambiar datos haciéndolos responder.                    </p>
                   </div>
                 </div>
               </li>
+
             </ul>
           </div>
         </div>
       </div>
     </div>
 
+
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
 
-            <!-- Sitio de visitantes -->
-            <div class="row">
-                        
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Sitios de Visitantes</h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li>
-                      <a data-toggle="collapse" href="#collapse80" aria-expanded="false" aria-controls="collapse80"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="collapse show x_content" id="collapse80">
-                    <div class="dashboard-widget-content">
-                      <div class="col-md-4 hidden-small">
-                        <h2 class="line_30">125.7k Views from 60 countries</h2>
+      <div class="row">
 
-                        <table class="countries_list">
-                          <tbody>
-                            <tr>
-                              <td>United States</td>
-                              <td class="fs15 fw700 text-right">33%</td>
-                            </tr>
-                            <tr>
-                              <td>France</td>
-                              <td class="fs15 fw700 text-right">27%</td>
-                            </tr>
-                            <tr>
-                              <td>Germany</td>
-                              <td class="fs15 fw700 text-right">16%</td>
-                            </tr>
-                            <tr>
-                              <td>Spain</td>
-                              <td class="fs15 fw700 text-right">11%</td>
-                            </tr>
-                            <tr>
-                              <td>Britain</td>
-                              <td class="fs15 fw700 text-right">10%</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="col-md-8 col-sm-12 col-xs-12" style="height:230px;">
-                      <app-dibujo></app-dibujo>
-                      </div>
-                      <!--<div id="world-map-gdp" class="col-md-8 col-sm-12 col-xs-12" style="height:230px;"></div>-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="x_panel tile fixed_height_320">
+
+            <div class="x_title">
+              <h2>Parametros de calidad de agua potable</h2>
+              <ul class="nav navbar-right panel_toolbox">
+                <li>
+                  <a data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1"><i class="fa fa-chevron-up"></i></a>
+                </li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <i class="fa fa-wrench"></i>
+                  </a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Settings 1</a></li>
+                    <li><a href="#">Settings 2</a></li>
+                  </ul>
+                </li>
+
+                <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="collapse show x_content" id="collapse1">
+              <h4>Cantidad de datos registrados</h4>
+
+              <br>
+
+              <div class="widget_summary">
+                <div class="w_left w_25"><span>Temperatura</span></div>
+
+                <div class="w_center w_55">
+                  <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_minibus*100)/registro_flujo) +'%'}">
+                      <span class="sr-only">66% Complete</span>
                     </div>
                   </div>
                 </div>
-              </div>           
-            
-            </div>
+
+                <div class="w_right w_20"><span>{{(registro_flujo_minibus*100)/registro_flujo | number:'2.2' }} %</span></div>
+                <div class="clearfix"></div>
+              </div>
 
 
-            <div class="row">
-
-                    <!-- Lista de tareas -->
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                      <div class="x_panel">
-                        <div class="x_title">
-                          <h2>Lista de Tareas</h2>
-                          <ul class="nav navbar-right panel_toolbox">
-                            <li>
-                            <a data-toggle="collapse" href="#collapse9" aria-expanded="false" aria-controls="collapse9"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                              <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Settings 1</a></li>
-                                <li><a href="#">Settings 2</a></li>
-                              </ul>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
-                          </ul>
-                          <div class="clearfix"></div>
-                        </div>
-                        <div class="collapse show x_content" id="collapse9">
-
-                          <div class="">
-                            <ul class="to_do">
-                              <li><p><input type="checkbox" class="flat"> Deteccion de Ambulancias </p></li>
-                              <li><p><input type="checkbox" class="flat"> Mostrar Ahorro</p></li>
-                              <li><p><input type="checkbox" class="flat"> Deteccion de Eventos</p></li>
-                              <li><p><input type="checkbox" class="flat"> Multa Electronica</p></li>
-                              <li><p><input type="checkbox" class="flat"> Contaminacion Ambiental</p></li>
-                              <li><p><input type="checkbox" class="flat"> Contaminacion Acustica</p></li>
-                              <li><p><input type="checkbox" class="flat"> Restriccion Vehicular</p></li>
-                              <li><p><input type="checkbox" class="flat"> Control Trameaje</p></li>
-                              <li><p><input type="checkbox" class="flat"> Demanda de Autos</p></li>
-                              <li><p><input type="checkbox" class="flat"> Mostrar Tiempos</p></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+              <div class="widget_summary">
+                <div class="w_left w_25"><span>pH</span></div>
+                <div class="w_center w_55">
+                  <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_bus*100)/registro_flujo) +'%'}">
+                      <span class="sr-only">60% Complete</span>
                     </div>
-                    
-                    <!-- Uso diario de activos -->
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                      <div class="x_panel">
-                        <div class="x_title">
-                          <h2>Temperatura</h2>
-                          <ul class="nav navbar-right panel_toolbox">
-                            <li><a data-toggle="collapse" href="#collapsep" aria-expanded="false" aria-controls="collapsep"><i class="fa fa-chevron-up"></i></a>
-                            </li>
-                            <li class="dropdown">
-                              <a data-toggle="collapse" href="#collapsepp" aria-expanded="false" aria-controls="collapsepp"><i class="fa fa-wrench"></i></a>
-                              <div class="collapse" id="collapsepp">
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Settings 1</a></li>
-                                <li><a href="#">Settings 2</a></li>
-                              </ul>
-                              </div>
-                            </li>
-                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                            </li>
-                          </ul>
-                          <div class="clearfix"></div>
-                        </div>
-                        <div class="collapse show x_content" id="collapsep">
-                          <div class="row">
-                            <div class="col-sm-12">
-                              <div class="temperature"><b>Monday</b>, 07:30 AM
-                                <span>F</span>
-                                <span><b>C</b></span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-sm-4">
-                              <div class="weather-icon">
-                                <canvas height="84" width="84" id="partly-cloudy-day"></canvas>
-                              </div>
-                            </div>
-                            <div class="col-sm-8">
-                              <div class="weather-text">
-                                <h2>Texas <br><i>Partly Cloudy Day</i></h2>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="weather-text pull-right">
-                              <h3 class="degrees">23</h3>
-                            </div>
-                          </div>
+                  </div>
+                </div>
+                <div class="w_right w_20"><span>{{(registro_flujo_bus*100)/registro_flujo | number:'2.2' }} %</span></div>
+                <div class="clearfix"></div>
+              </div>
 
-                          <div class="clearfix"></div>
-
-                          <div class="row weather-days">
-                            <div class="col-sm-2">
-                              <div class="daily-weather">
-                                <h2 class="day">Mon</h2>
-                                <h3 class="degrees">25</h3>
-                                <canvas id="clear-day" width="32" height="32"></canvas>
-                                <h5>15 <i>km/h</i></h5>
-                              </div>
-                            </div>
-                            <div class="col-sm-2">
-                              <div class="daily-weather">
-                                <h2 class="day">Tue</h2>
-                                <h3 class="degrees">25</h3>
-                                <canvas height="32" width="32" id="rain"></canvas>
-                                <h5>12 <i>km/h</i></h5>
-                              </div>
-                            </div>
-                            <div class="col-sm-2">
-                              <div class="daily-weather">
-                                <h2 class="day">Wed</h2>
-                                <h3 class="degrees">27</h3>
-                                <canvas height="32" width="32" id="snow"></canvas>
-                                <h5>14 <i>km/h</i></h5>
-                              </div>
-                            </div>
-                            <div class="col-sm-2">
-                              <div class="daily-weather">
-                                <h2 class="day">Thu</h2>
-                                <h3 class="degrees">28</h3>
-                                <canvas height="32" width="32" id="sleet"></canvas>
-                                <h5>15 <i>km/h</i></h5>
-                              </div>
-                            </div>
-                            <div class="col-sm-2">
-                              <div class="daily-weather">
-                                <h2 class="day">Fri</h2>
-                                <h3 class="degrees">28</h3>
-                                <canvas height="32" width="32" id="wind"></canvas>
-                                <h5>11 <i>km/h</i></h5>
-                              </div>
-                            </div>
-                            <div class="col-sm-2">
-                              <div class="daily-weather">
-                                <h2 class="day">Sat</h2>
-                                <h3 class="degrees">26</h3>
-                                <canvas height="32" width="32" id="cloudy"></canvas>
-                                <h5>10 <i>km/h</i></h5>
-                              </div>
-                            </div>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>
-
+              <div class="widget_summary">
+                <div class="w_left w_25"><span>Conductividad</span></div>
+                <div class="w_center w_55">
+                  <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_particular*100)/registro_flujo) +'%'}">
+                      <span class="sr-only">60% Complete</span>
                     </div>
-              
+                  </div>
+                </div>
+                <div class="w_right w_20"><span>{{(registro_flujo_particular*100)/registro_flujo | number:'2.2' }} %</span></div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="widget_summary">
+                <div class="w_left w_25"><span>SDT</span></div>
+                <div class="w_center w_55">
+                  <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_pesado*100)/registro_flujo) +'%'}">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w_right w_20"><span>{{(registro_flujo_pesado*100)/registro_flujo | number:'2.2' }} %</span></div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="widget_summary">
+                <div class="w_left w_25"><span>Salinidad</span></div>
+                <div class="w_center w_55">
+                  <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_ambulancia*100)/registro_flujo) +'%'}">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w_right w_20"><span>{{(registro_flujo_ambulancia*100)/registro_flujo | number:'2.2' }} %</span></div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="widget_summary">
+                <div class="w_left w_25"><span>Turbiedad</span></div>
+                <div class="w_center w_55">
+                  <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_policia*100)/registro_flujo) +'%'}">
+                      <span class="sr-only">60% Complete</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w_right w_20"><span>{{(registro_flujo_policia*100)/registro_flujo | number:'2.2' }} %</span></div>
+                <div class="clearfix"></div>
+              </div>
+
             </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row" style="margin-bottom: 50px">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <div class="x_panel tile fixed_height_320 overflow_hidden">
+            <div class="x_title">
+              <h2>Uso de Agua Potable</h2>
+              <ul class="nav navbar-right panel_toolbox">
+                <li><a data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2"><i class="fa fa-chevron-up"></i></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Settings 1</a></li>
+                    <li><a href="#">Settings 2</a></li>
+                  </ul>
+                </li>
+                <li><a class="close-link"><i class="fa fa-close"></i></a></li>
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+            <div class="collapse show x_content" id="collapse2">
+              <table class="" style="width:100%">
+                <!--
+                <tr>
+                  <th style="width:37%;"><p>Top 5</p></th>
+                  <th>
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7"><p class="">Auto</p></div>
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5"><p class="">Nro</p></div>
+                  </th>
+                </tr>-->
+                <tr>
+                  <td>
+                    <app-dibujo style="padding: 100px"></app-dibujo>
+                    <!--  <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>-->
+                  </td>
+
+                  <td>
+                    <table class="tile_info">
+                      <tr><td><p><i class="fa fa-square blue"></i>pH </p></td><td>30%</td></tr>
+                      <tr><td><p><i class="fa fa-square green"></i>Conductividad </p></td><td>10%</td></tr>
+                      <tr><td><p><i class="fa fa-square purple"></i>SDT </p></td><td>20%</td></tr>
+                      <tr><td><p><i class="fa fa-square aero"></i>Salinidad </p></td><td>15%</td></tr>
+                      <tr><td><p><i class="fa fa-square red"></i>Turbiedad </p></td><td>30%</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
 
     </div>
-
   </div>
-
-
 </div>

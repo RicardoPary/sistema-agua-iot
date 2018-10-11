@@ -1,13 +1,13 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import { CarRegisterComponent } from './components/car-register/car-register.component';
-import { FlowRegisterComponent } from './components/flow-register/flow-register.component';
+import { DatosTempComponent} from './components/datos-temp/datos-temp.component';
+import { DatosPhComponent } from './components/datos-ph/datos-ph.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
 import { MapsComponent } from './components/maps/maps.component';
-import { SemaphoreGroupComponent } from './components/semaphore-group/semaphore-group.component';
-import { SemaphoreTimeComponent } from './components/semaphore-time/semaphore-time.component';
-import { SensorRegisterComponent } from './components/sensor-register/sensor-register.component';
+import { DatosConductComponent } from './components/datos-conduct/datos-conduct.component';
+import { RegistroGralComponent } from './components/registro-gral/registro-gral.component';
+import {AlertasComponent} from './components/alertas/alertas.component';
 
 import { DiagramasComponent } from './components/diagramas/diagramas.component';
 import { DetalleEstadoComponent } from './components/detalle-estado/detalle-estado.component';
@@ -22,25 +22,31 @@ import { Dibujo5Component } from './components/dibujo5/dibujo5.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { NewArticleComponent } from './components/new-article/new-article.component';
 
-import { FlujoRegistroComponent } from './components/flujo-registro/flujo-registro.component';
-import { MultasRegistroComponent } from './components/multas-registro/multas-registro.component';
+import { DatoSalinidadComponent } from './components/dato-salinidad/dato-salinidad.component';
+import { DatosTurbiedadComponent } from './components/datos-turbiedad/datos-turbiedad.component';
+import {NormaMinComponent} from './components/norma-min/norma-min.component';
+import {DatoSdtComponent} from './components/dato-sdt/dato-sdt.component';
+import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.component';
 
 
 const rutas: Routes = [
-    {path:'tareas',component: SemaphoreTimeComponent},    
-    {path:'contactos',component: CarRegisterComponent},
-    {path:'dibujos',component: DiagramasComponent},
-    {path:'detalle',component: DetalleEstadoComponent},
-    {path:'detalleflujo',component: DetalleAutosComponent},
-    {path:'contaminacion',component: SensorRegisterComponent},
-    {path:'admin',component: AdminComponent},
-    {path:'autos',component: GraphicsComponent},
-    {path:'maps',component: MapsComponent},
-    {path:'semaforos',component: SemaphoreGroupComponent},
-    {path:'flujos',component: FlowRegisterComponent},
-    {path:'flujohistorial',component: FlujoRegistroComponent},
-    {path:'multashistorial',component: MultasRegistroComponent},
-    {path:'new-article',component: NewArticleComponent},
-    {path:'', redirectTo:'/admin',pathMatch:'full'},
+    {path: 'dibujos', component: DiagramasComponent},
+    {path: 'detalle', component: DetalleEstadoComponent},
+    {path: 'detalleflujo', component: DetalleAutosComponent},
+    {path: 'new-article', component: NewArticleComponent     },
+    {path: 'grafico1', component: GraphicsComponent},
+    {path: 'grafico2', component: GraphicsDosComponent},
+    {path: 'alertas', component: AlertasComponent},
+    {path: 'admin', component: AdminComponent},
+    {path: 'registrogrl', component: RegistroGralComponent},
+    {path: 'datostemp', component: DatosTempComponent},
+    {path: 'datosdt', component: DatoSdtComponent},
+    {path: 'datosconduct', component: DatosConductComponent},
+    {path: 'datosph', component: DatosPhComponent},
+    {path: 'datosalinidad', component: DatoSalinidadComponent},
+    {path: 'datosturbiedad', component: DatosTurbiedadComponent},
+    {path: 'normamin', component: NormaMinComponent},
+    {path: 'mapas', component: MapsComponent},
+    {path: '', redirectTo: '/admin', pathMatch: 'full'},
                       ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(rutas);

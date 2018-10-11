@@ -9,13 +9,13 @@ import {EstadosService} from './services/estados.service';
 import {MysqlService} from './services/mysql.service';
 import {AutosService} from './services/autos.service';
 import {SensoresService} from './services/sensores.service';
-import {CarRegisterComponent} from './components/car-register/car-register.component';
-import {FlowRegisterComponent} from './components/flow-register/flow-register.component';
+import {DatosTempComponent} from './components/datos-temp/datos-temp.component';
+import {DatosPhComponent} from './components/datos-ph/datos-ph.component';
 import {GraphicsComponent} from './components/graphics/graphics.component';
 import {MapsComponent} from './components/maps/maps.component';
-import {SemaphoreGroupComponent} from './components/semaphore-group/semaphore-group.component';
-import {SemaphoreTimeComponent} from './components/semaphore-time/semaphore-time.component';
-import {SensorRegisterComponent} from './components/sensor-register/sensor-register.component';
+import {DatosConductComponent} from './components/datos-conduct/datos-conduct.component';
+import {RegistroGralComponent} from './components/registro-gral/registro-gral.component';
+import {AlertasComponent} from './components/alertas/alertas.component';
 import {DetalleEstadoComponent} from './components/detalle-estado/detalle-estado.component';
 import {DiagramasComponent} from './components/diagramas/diagramas.component';
 import {DibujoComponent} from './components/dibujo/dibujo.component';
@@ -24,30 +24,30 @@ import {Dibujo3Component} from './components/dibujo3/dibujo3.component';
 import {Dibujo4Component} from './components/dibujo4/dibujo4.component';
 import {AdminComponent} from './components/admin/admin.component';
 import {NewArticleComponent} from './components/new-article/new-article.component';
-import {MultasRegistroComponent} from './components/multas-registro/multas-registro.component';
+import {DatosTurbiedadComponent} from './components/datos-turbiedad/datos-turbiedad.component';
 import {DetalleAutosComponent} from './components/detalle-autos/detalle-autos.component';
 import {Dibujo5Component} from './components/dibujo5/dibujo5.component';
-import {FlujoRegistroComponent} from './components/flujo-registro/flujo-registro.component';
+import {DatoSalinidadComponent} from './components/dato-salinidad/dato-salinidad.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {routing} from './routes';
 import {ChartsModule} from 'ng2-charts';
 import {Angular2FontawesomeModule} from 'angular2-fontawesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
+import { NormaMinComponent } from './components/norma-min/norma-min.component';
+import {DatoSdtComponent} from './components/dato-sdt/dato-sdt.component';
+import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarRegisterComponent,
-    FlowRegisterComponent,
+    DatosTempComponent,
+    DatosPhComponent,
     GraphicsComponent,
     MapsComponent,
-    SemaphoreGroupComponent,
-    SemaphoreTimeComponent,
-    SensorRegisterComponent,
+    DatosConductComponent,
+    RegistroGralComponent,
+    AlertasComponent,
     DetalleEstadoComponent,
     DiagramasComponent,
     DibujoComponent,
@@ -57,12 +57,12 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     Dibujo5Component,
     AdminComponent,
     DetalleAutosComponent,
-    FlujoRegistroComponent,
-    MultasRegistroComponent,
+    DatoSalinidadComponent,
+    DatosTurbiedadComponent,
     NewArticleComponent,
-    SidebarComponent,
-    HeaderComponent,
-    FooterComponent
+    NormaMinComponent,
+    DatoSdtComponent,
+    GraphicsDosComponent
   ],
   imports: [
     BrowserModule,

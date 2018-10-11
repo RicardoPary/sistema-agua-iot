@@ -1,0 +1,59 @@
+<div class="row">
+<div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px;">
+	<div class="x_panel">
+		<div class="x_title">
+			<h1 style="font-size: 20px;">PARÁMETROS EN ALERTAS</h1>
+			<ul class="nav navbar-right panel_toolbox">
+				<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						<i class="fa fa-wrench"></i>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Settings 1</a></li>
+						<li><a href="#">Settings 2</a></li>
+					</ul>
+				</li>
+				<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="x_content">
+			<div class="table-responsive">
+				<table class="table table-striped jambo_table bulk_action ">
+					<thead>
+						<tr class="headings">
+							<th class="column-title">Fecha</th>
+							<th class="column-title">Hora</th>
+							<th class="column-title">Parámetro</th>
+							<th class="column-title">Dato</th>
+							<th class="column-title">Estado de control</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let estado of estados">
+							<td>{{estado._id}}</td>
+							<td>{{estado.humo}}</td>
+							<td>{{estado.sonido}}</td>
+							<td>{{estado.etanol}}</td>
+							<td>{{estado.fecha}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+  <div class="x_panel" style=" width: 45%; margin-right: 10px">
+    <h1>NB-512</h1>
+    <div *ngFor="let estado1 of estados">
+      {{estado1._id}}
+    </div>
+  </div>
+  <div class="x_panel" style=" width: 54%">
+    <h1>Nueva alerta</h1>
+    <div *ngFor="let estado2 of estados">
+      {{estado2._id}}PH
+    </div>
+  </div>
+</div>
+</div>

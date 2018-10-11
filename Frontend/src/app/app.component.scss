@@ -1,7 +1,41 @@
+/*
+$color-2: #1ab394;
+$color-7: #1f3647;
+$color-3: #293846;
+$color-4: #2f4050;
+$color-5: #676a6c;
+$color-6: #9fb1c2;
+$color-1: #f3f3f4;
+
+$color-2: #e84545;
+$color-7: #2b2e4a;
+$color-3: #53354a;
+$color-4: #903749;
+$color-5: #ec6a6a;
+$color-6: #f18f8f;
+$color-1: #f3f3f4;
+
+$color-2: #7045af;
+$color-7: #e14594;
+$color-3: #2b3595;
+$color-4: #182952;
+$color-5: #ec6a6a;
+$color-6: #41a7b3;
+$color-1: #f3f3f4;
+*/
+$color-2: #e14594;
+$color-7: #7045af;
+$color-3: #2b3595;
+$color-4: #182952;
+$color-5: #ec6a6a;
+$color-6: #f18f8f;
+$color-1: #dfe2fe;
+
+
 html, body{
   font-family: "open sans","Helvetica Neue",Helvetica,Arial, sans-serif;
-  background-color: #f3f3f4;
-  color: #676a6c;
+  background-color: $color-1;
+  color: $color-5;
   height: 100%;
 }
 
@@ -11,12 +45,12 @@ html, body{
 }
 
 #side-menu{
-  background:#2f4050;
+  background: $color-4;
   padding: 0px;
 }
 
 #side-menu h1{
-  color:#1f3647;
+  color:$color-7;
   text-align: center;
   margin: 10px 0px;
   font-size: 25px;
@@ -47,8 +81,8 @@ html, body{
 /*Nav Header*/
 
 #nav-header{
-  background-color: #fff;
-  border-bottom: 1px solid #e7eaec;
+  background-color: $color-1;
+  border-bottom: 1px solid $color-1;
 }
 
 #nav-header #header-search-field{
@@ -57,13 +91,16 @@ html, body{
   border: none;
   width: 300px;
   outline: none;
+  background: $color-1;
 }
-
+h1{
+  color: $color-4;
+}
 #nav-header ul{
   margin:0px;
   padding: 0px;
   list-style: none;
-  color: #676a6c;
+  color: $color-5;
 }
 
 #nav-header ul li{
@@ -73,11 +110,11 @@ html, body{
 }
 
 #nav-header ul .fa{
-  color: #676a6c;
+  color: $color-5;
 }
 
 .label-message{
-  background-color: #1ab394;
+  background-color: $color-2;
 }
 
 #nav-header ul a{
@@ -85,11 +122,11 @@ html, body{
 }
 
 #nav header .logout{
-  color: #676a6c;
+  color: $color-5;
 }
 
 #nav header .logout:hover{
-  color: #676a6c;
+  color: $color-5;
 }
 
 #nav-header #welcome{
@@ -111,31 +148,31 @@ html, body{
   position: absolute;
   width: 100%;
   bottom:0px;
-  background-color: #fff;
+  background-color: $color-1;
   padding: 10px;
   font-size: 12px;
-  color: #676a6c;
+  color: $color-5;
 }
 
 .navbar-default{
-  background-color: #fff;
+  background-color: $color-1;
 }
 
 .navbar-default .navbar-toogle{
-  border-bottom-color: #1ab394;
-  background-color: #1ab394;
+  border-bottom-color: $color-2;
+  background-color: $color-2;
 }
 
 .navbar-default .icon-bar{
-  border: 1px white solid;
+  border: 1px $color-1 solid;
 }
 
 .navbar-default .navbar-toogle:hover{
-  background-color: #1ab394;
+  background-color: $color-2;
 }
 
 .navbar-default .navbar-toogle:focus{
-  background-color: #1ab394;
+  background-color: $color-2;
 }
 
 #side-menu ul{
@@ -147,7 +184,7 @@ html, body{
 #side-menu a{
   padding: 12px 20px;
   text-decoration: none;
-  color: #9fb1c2 ;
+  color: $color-6 ;
   font-weight: bold;
   font-size: 13px;
   display: block;
@@ -158,26 +195,26 @@ html, body{
 }
 
 #side-menu a:hover{
-  background-color: #293846;
-  color: #fff;
+  background-color: $color-3;
+  color: $color-1;
   display: block;
 }
 
 #side-menu .active a{
-  color: #fff;
-  background-color: #293846;
+  color: $color-1;
+  background-color: $color-3;
 }
 
 #side-menu .settings-btn{
-  background-color: #1ab394;
+  background-color: $color-2;
 }
 
 #side-menu .settings-btn a{
-  color: #fff;
+  color: $color-1;
 }
 
 #side-menu .settings-btn a:hover{
-  background-color: #1ab394;
+  background-color: $color-2;
 }
 
 #side-menu .collapseable li{
@@ -186,19 +223,19 @@ html, body{
 }
 
 #side-menu .collapseable a{
-  color: #9fb1c2;
+  color: $color-6;
   font-size: 12px;
   padding: 0px 10px;
   display: block;
 }
 
 #side-menu .collapseable a:hover{
-  color: #fff;
+  color: $color-1;
 }
 
 #side-menu .collapseable{
-  border-left: 4px solid #1ab394;
-  background-color:  #293846;
+  border-left: 4px solid $color-2;
+  background-color:  $color-3;
 }
 
 #side-menu .link > ul > li{
@@ -206,22 +243,22 @@ html, body{
 }
 
 .navbar-default{
-  background-color: #fff;
+  background-color: $color-1;
 }
 
 .navbar-default .navbar-toggle{
-  border-color:#1ab394;
-  background-color: #1ab394;
+  border-color:$color-2;
+  background-color: $color-2;
 }
 
 .navbar-default .icon-bar{
-  border:1px white solid;
+  border:1px $color-1 solid;
 }
 
 .navbar-default .navbar-toggle:hover{
-  background-color: #1ab394;
+  background-color: $color-2;
 }
 
 .navbar-default .navbar-toggle:focus{
-  background-color: #1ab394;
+  background-color: $color-2;
 }
