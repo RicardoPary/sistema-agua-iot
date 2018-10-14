@@ -7,6 +7,10 @@ import {AutosService} from '../../services/autos.service';
   styleUrls: ['./dato-sdt.component.scss']
 })
 export class DatoSdtComponent implements OnInit {
+
+  datos: any;
+  estados: any;
+
   settings = {
     add: {
       addButtonContent: '<i class="fa fa-plus fa-lg"></i>',

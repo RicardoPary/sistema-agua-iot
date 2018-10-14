@@ -24,12 +24,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, '../Frontend/dist')));
+app.use(express.static(path.join(__dirname, '../Frontend/dist/Frontend')));
 
 // Set our api routes
 app.use('/api', api);
-
-
 
 
 // Catch all other routes and return the index file

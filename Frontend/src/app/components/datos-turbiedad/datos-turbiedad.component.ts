@@ -7,6 +7,9 @@ import {AutosService} from '../../services/autos.service';
   styleUrls: ['./datos-turbiedad.component.scss']
 })
 export class DatosTurbiedadComponent implements OnInit {
+
+  estados: any;
+
   settings = {
     add: {
       addButtonContent: '<i class="fa fa-plus fa-lg"></i>',

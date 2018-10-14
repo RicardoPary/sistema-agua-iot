@@ -8,7 +8,8 @@ import {AutosService} from '../../services/autos.service';
 })
 export class DatoSalinidadComponent implements OnInit {
 
-
+  datos: any;
+  estados: any;
 
   settings = {
     add: {

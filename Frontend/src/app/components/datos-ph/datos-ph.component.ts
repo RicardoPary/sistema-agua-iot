@@ -1,5 +1,5 @@
-import { Component, OnInit} from '@angular/core';
-import { EstadosService } from '../../services/estados.service';
+import {Component, OnInit} from '@angular/core';
+import {EstadosService} from '../../services/estados.service';
 
 @Component({
   selector: 'app-datos-ph',
@@ -7,6 +7,8 @@ import { EstadosService } from '../../services/estados.service';
   styleUrls: ['./datos-ph.component.scss']
 })
 export class DatosPhComponent implements OnInit {
+
+  estados: any;
 
   settings = {
     add: {
@@ -44,22 +46,21 @@ export class DatosPhComponent implements OnInit {
   };
 
   data = [
-    {id:3,name:"riki",username:"sadas",email:"asdasd"},
-    {id:4,name:"riki",username:"sadas",email:"asdasd"},
-    {id:5,name:"riki",username:"sadas",email:"asdasd"},
-    {id:6,name:"riki",username:"sadas",email:"asdasd"},
-    {id:7,name:"riki",username:"sadas",email:"asdasd"},
-    {id:8,name:"riki",username:"sadas",email:"asdasd"},
-    {id:3,name:"riki",username:"sadas",email:"asdasd"}
+    {id: 3, name: "riki", username: "sadas", email: "asdasd"},
+    {id: 4, name: "riki", username: "sadas", email: "asdasd"},
+    {id: 5, name: "riki", username: "sadas", email: "asdasd"},
+    {id: 6, name: "riki", username: "sadas", email: "asdasd"},
+    {id: 7, name: "riki", username: "sadas", email: "asdasd"},
+    {id: 8, name: "riki", username: "sadas", email: "asdasd"},
+    {id: 3, name: "riki", username: "sadas", email: "asdasd"}
   ];
-
 
 
   constructor() {
 
   }
 
-  ngOnInit(){
+  ngOnInit() {
 
   }
 
