@@ -27,7 +27,8 @@ import { DatosTurbiedadComponent } from './components/datos-turbiedad/datos-turb
 import {NormaMinComponent} from './components/norma-min/norma-min.component';
 import {DatoSdtComponent} from './components/dato-sdt/dato-sdt.component';
 import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.component';
-
+import {LoginComponent} from "./components/login/login.component";
+import {CompoComponent} from "./components/compo.component";
 
 const rutas: Routes = [
     {path: 'dibujos', component: DiagramasComponent},
@@ -47,6 +48,13 @@ const rutas: Routes = [
     {path: 'datosturbiedad', component: DatosTurbiedadComponent},
     {path: 'normamin', component: NormaMinComponent},
     {path: 'mapas', component: MapsComponent},
-    {path: '', redirectTo: '/admin', pathMatch: 'full'},
+    {path: 'login', component: LoginComponent},
+    {path: '', redirectTo: '/login', pathMatch: 'full'},
+    {
+      path: 'compo', component: CompoComponent,
+      children: [
+        {path: '', redirectTo: 'admin', pathMatch: 'full' }
+      ]
+    }
                       ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(rutas);

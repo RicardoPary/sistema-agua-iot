@@ -1,0 +1,12 @@
+<form #loginForm="ngForm" (ngSumit)="login(loginForm)" novalidate>
+  <div class="container">
+    <h2>INICIO DE SESIÓN</h2>
+    <label>Usuario</label>
+      <input type="text" name="email" id="email" placeholder="Usuario" ngModel required #email="ngModel">
+
+    <label>Contraseña</label>
+      <input type="password" name="password" id="password" placeholder="Contraseña" ngModel>
+    <a href="#">¿Olvidaste tu contraseña?</a>
+    <button type="submit" (click)="clicLogin()">ACEPTAR</button>
+  </div>
+</form>

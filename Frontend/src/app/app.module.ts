@@ -37,6 +37,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NormaMinComponent } from './components/norma-min/norma-min.component';
 import {DatoSdtComponent} from './components/dato-sdt/dato-sdt.component';
 import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.component';
+import { LoginComponent } from './components/login/login.component';
+import {CompoComponent} from "./components/compo.component";
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.compo
     NewArticleComponent,
     NormaMinComponent,
     DatoSdtComponent,
-    GraphicsDosComponent
+    GraphicsDosComponent,
+    LoginComponent,
+    CompoComponent
   ],
   imports: [
     BrowserModule,

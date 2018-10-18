@@ -1,0 +1,48 @@
+$color-2: #e14594;
+$color-7: #7045af;
+$color-3: #2b3595;
+$color-4: #182952;
+$color-5: #ec6a6a;
+$color-6: #f18f8f;
+$color-1: #dfe2fe;
+
+form{
+  background: rgba(60, 101, 98, .38);
+  max-width: 450px;
+  height: 360px;
+  padding: 30px 50px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  margin: auto;
+  border-radius: 5px;
+  position: relative;
+  top: 150px;
+  label{
+    font-weight: 600;
+    float: left;
+    margin-top: 10px;
+  }
+  input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: white;
+    width: 100%;
+    border: 0;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  a{
+    display: block;
+    color: $color-4;
+  }
+  button{
+    color: white;
+    background: $color-5;
+    border-color: $color-6;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 8px 35px;
+  }
+}

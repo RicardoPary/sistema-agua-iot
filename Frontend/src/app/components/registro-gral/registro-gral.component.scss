@@ -234,9 +234,11 @@ table.display thead td:active {
 .acep, .actu{
   width: 150px;
   margin: 15px 80px;
-  background: $color-5;
   color: white;
-  font-weight: bold;
+  background: $color-5;
+  border-color: $color-6;
+  border-radius: 5px;
+  padding: 8px 35px;
   &:hover{
     background: $color-6;
     font-weight: bold;
