@@ -78,7 +78,6 @@ import {Router} from "@angular/router";
           </a>
           <ul class="collapse collapseable" id="collapse-contaminations">
             <li><a routerLink="/contaminacion">OMS</a></li>
-            <li><a routerLink="/mapas">mapas</a></li>
           </ul>
 
         </li>
@@ -91,8 +90,8 @@ import {Router} from "@angular/router";
     <div class="col-md-10 col-sm-11 display-table-cell valign-top box" >
       <header id="nav-header" class="clearfix" class="row">
 
-        <div class="col-md-3">
-          <h1 class="hidden-sm-down hidden-xs-down">Agua Potable</h1>
+        <div class="col-md-5">
+          <h2 class="hidden-sm-down hidden-xs-down" style="margin-top: 8px">SISTEMA DE MONITOREO</h2> 
         </div>
         <div class="col-md-3">
           <input class="form-control hidden-sm-down hidden-xs-down" type="search" placeholder="Buscar..." style="margin-top: 10px">
@@ -100,7 +99,7 @@ import {Router} from "@angular/router";
         <div class="col-md-1">
           <i class="fa fa-search" style="margin-top: 20px" aria-hidden="true"></i>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-3">
           <ul class="pull-right">
             <li class="fixed-width">
               <a href="">
