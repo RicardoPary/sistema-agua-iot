@@ -29,6 +29,7 @@ import {DatoSdtComponent} from './components/dato-sdt/dato-sdt.component';
 import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.component';
 import {LoginComponent} from "./components/login/login.component";
 import {CompoComponent} from "./components/compo.component";
+import {ReporteComponent} from "./components/reporte/reporte.component";
 
 const rutas: Routes = [
     {path: 'dibujos', component: DiagramasComponent},
@@ -49,9 +50,9 @@ const rutas: Routes = [
     {path: 'normamin', component: NormaMinComponent},
     {path: 'mapas', component: MapsComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'reporte', component: ReporteComponent},
     {path: '', redirectTo: '/admin', pathMatch: 'full'},
-    {
-      path: 'compo', component: CompoComponent,
+    {path: 'compo', component: CompoComponent,
       children: [
         {path: '', redirectTo: 'admin', pathMatch: 'full' }
       ]

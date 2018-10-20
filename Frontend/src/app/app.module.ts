@@ -39,6 +39,7 @@ import {DatoSdtComponent} from './components/dato-sdt/dato-sdt.component';
 import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.component';
 import { LoginComponent } from './components/login/login.component';
 import {CompoComponent} from "./components/compo.component";
+import { ReporteComponent } from './components/reporte/reporte.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import {CompoComponent} from "./components/compo.component";
     DatoSdtComponent,
     GraphicsDosComponent,
     LoginComponent,
-    CompoComponent
+    CompoComponent,
+    ReporteComponent
   ],
   imports: [
     BrowserModule,
