@@ -49,7 +49,7 @@ const rutas: Routes = [
     {path: 'normamin', component: NormaMinComponent},
     {path: 'mapas', component: MapsComponent},
     {path: 'login', component: LoginComponent},
-    {path: '', redirectTo: '/login', pathMatch: 'full'},
+    {path: '', redirectTo: '/admin', pathMatch: 'full'},
     {
       path: 'compo', component: CompoComponent,
       children: [
