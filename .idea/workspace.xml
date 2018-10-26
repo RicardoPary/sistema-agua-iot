@@ -4,7 +4,14 @@
     <list default="true" id="b27d6fa0-7187-4527-9e4a-926c7429441c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/app.component.html" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.scss" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.html" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/app/routes.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/routes.ts" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/test/dibujo5.component.spec.ts" afterPath="$PROJECT_DIR$/Frontend/src/test/dibujo5.component.spec.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,11 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/src/app/routes.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="51" column="56" lean-forward="true" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+            <state relative-caret-position="356">
+              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -88,65 +95,29 @@
       <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
-              <caret line="138" column="6" lean-forward="false" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#div#0;n#header#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="401">
+              <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compo.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/compo.component.ts">
+      <file leaf-file-name="reporte-principal.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="144" column="6" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="144" selection-end-column="6" />
-              <folding>
-                <marker date="1539873211388" expanded="true" signature="190:5766" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="228:5759" ph="..." />
-                <marker date="1539873211388" expanded="false" signature="354:367" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="368:4003" ph="..." />
-                <marker date="1539873211388" expanded="false" signature="420:447" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="483:3992" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="517:711" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="551:697" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="738:1698" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="835:1080" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="1148:1684" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="1725:2304" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="1824:2074" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="2143:2290" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="2331:2859" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="2432:2688" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="2758:2845" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="2886:3415" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="2989:3241" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="3312:3401" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="3455:3978" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="3564:3813" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="3887:3963" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4105:5749" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4166:5427" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4198:4316" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4259:4274" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4347:4494" ph="..." />
-                <marker date="1539873211388" expanded="false" signature="4462:4478" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4525:4623" ph="..." />
-                <marker date="1539873211388" expanded="false" signature="4568:4584" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4654:5410" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4688:5395" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4725:4932" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4751:4914" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4970:5180" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="4996:5162" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="5198:5378" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="5251:5360" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="5453:5506" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="5532:5737" ph="..." />
-                <marker date="1539873211388" expanded="true" signature="5585:5724" ph="..." />
-                <marker date="1539873211388" expanded="false" signature="5637:5643" ph="©" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reporte.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,6 +130,13 @@
       <find>acep</find>
       <find>img sr</find>
       <find>Agua Potable</find>
+      <find>Fecha</find>
+      <find>Inicio</find>
+      <find>es</find>
+      <find>dibujo5</find>
+      <find>4</find>
+      <find>Dibujo5</find>
+      <find>repo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,7 +166,6 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/home/home.component.scss" />
         <option value="$PROJECT_DIR$/Frontend/src/app/home/home.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/home/home.component.html" />
-        <option value="$PROJECT_DIR$/Frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/compo.module.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/login/login.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/login/login.component.html" />
@@ -197,8 +174,21 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.scss" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/login/login.component.scss" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/compo.component.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/datos-temp/datos-temp.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.scss" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/grafico-tres/grafico-tres.component.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/graphics-tres/grafico-tres.component.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/graphics-tres/graphics-tres.component.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/test/dibujo5.component.spec.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/graphics-tres/graphics-tres.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/graphics-tres/graphics-tres.component.scss" />
         <option value="$PROJECT_DIR$/Frontend/src/app/routes.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html" />
       </list>
     </option>
   </component>
@@ -217,9 +207,9 @@
       <path value="$PROJECT_DIR$/Frontend/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="304" />
-    <option name="width" value="1069" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -238,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -273,16 +262,35 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sistema-agua-iot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sistema-agua-iot" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="reporte" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sistema-agua-iot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sistema-agua-iot" type="462c0819:PsiDirectoryNode" />
+              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="reporte-principal" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/A-Sistema taller II/clonaciones/Sistema-Agua-IOT-OK" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -336,26 +344,29 @@
       <workItem from="1539724742959" duration="15000" />
       <workItem from="1539820159010" duration="5422000" />
       <workItem from="1539858860109" duration="10887000" />
-      <workItem from="1540059276971" duration="3586000" />
+      <workItem from="1540059276971" duration="5826000" />
+      <workItem from="1540486277103" duration="801000" />
+      <workItem from="1540583743153" duration="2867000" />
+      <workItem from="1540586905697" duration="1610000" />
+      <workItem from="1540589588899" duration="3184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33576000" />
+    <option name="totallyTimeSpent" value="44278000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="304" y="0" width="1069" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22405432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20089285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26377296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40460527" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -366,26 +377,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26151314" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47040972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -400,51 +391,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/semaphore-time/semaphore-time.component.ts" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/semaphore-time/semaphore-time.component.html" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/detalle-estado/detalle-estado.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="95" column="55" lean-forward="false" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/detalle-estado/detalle-estado.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/interfaces/marker.ts" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/maps/maps.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/semaphore-group/semaphore-group.component.html" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/semaphore-group/semaphore-group.component.ts" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/environments/environment.prod.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/sidebar/sidebar.component.ts" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/sidebar/sidebar.component.html" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/sidebar/sidebar.component.scss" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/header/header.component.scss" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/header/header.component.html" />
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/header/header.component.ts" />
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/footer/footer.component.html" />
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/footer/footer.component.ts" />
@@ -481,13 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="15" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Backend/routes/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -572,16 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="62" column="28" lean-forward="true" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#56#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/admin/admin.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -600,13 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="99" column="57" lean-forward="false" selection-start-line="99" selection-start-column="57" selection-end-line="99" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -634,72 +556,153 @@
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/compo.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
-          <caret line="144" column="6" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="144" selection-end-column="6" />
+          <caret line="144" column="6" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="144" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3876">
+          <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/datos-temp/datos-temp.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="228" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/datos-temp/datos-temp.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Backend/routes/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/graphics-tres/graphics-tres.component.ts" />
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/dibujo3/dibujo3.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/diagramas/diagramas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/test/dibujo5.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/graphics-tres/graphics-tres.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11090">
+          <caret line="4221" column="21" lean-forward="false" selection-start-line="4221" selection-start-column="21" selection-end-line="4221" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="4218" column="79" lean-forward="false" selection-start-line="4218" selection-start-column="79" selection-end-line="4218" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/graphics-tres/graphics-tres.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
           <folding>
-            <marker date="1539873211388" expanded="true" signature="190:5766" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="228:5759" ph="..." />
-            <marker date="1539873211388" expanded="false" signature="354:367" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="368:4003" ph="..." />
-            <marker date="1539873211388" expanded="false" signature="420:447" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="483:3992" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="517:711" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="551:697" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="738:1698" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="835:1080" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="1148:1684" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="1725:2304" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="1824:2074" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="2143:2290" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="2331:2859" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="2432:2688" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="2758:2845" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="2886:3415" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="2989:3241" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="3312:3401" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="3455:3978" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="3564:3813" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="3887:3963" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4105:5749" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4166:5427" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4198:4316" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4259:4274" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4347:4494" ph="..." />
-            <marker date="1539873211388" expanded="false" signature="4462:4478" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4525:4623" ph="..." />
-            <marker date="1539873211388" expanded="false" signature="4568:4584" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4654:5410" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4688:5395" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4725:4932" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4751:4914" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4970:5180" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="4996:5162" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="5198:5378" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="5251:5360" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="5453:5506" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="5532:5737" ph="..." />
-            <marker date="1539873211388" expanded="true" signature="5585:5724" ph="..." />
-            <marker date="1539873211388" expanded="false" signature="5637:5643" ph="©" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="138" column="6" lean-forward="false" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#0;n#header#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="401">
+          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/routes.ts">
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="51" column="56" lean-forward="true" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="458">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>

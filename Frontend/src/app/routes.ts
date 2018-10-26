@@ -17,7 +17,6 @@ import { DibujoComponent } from './components/dibujo/dibujo.component';
 import { Dibujo2Component } from './components/dibujo2/dibujo2.component';
 import { Dibujo3Component } from './components/dibujo3/dibujo3.component';
 import { Dibujo4Component } from './components/dibujo4/dibujo4.component';
-import { Dibujo5Component } from './components/dibujo5/dibujo5.component';
 
 import { AdminComponent } from './components/admin/admin.component';
 import { NewArticleComponent } from './components/new-article/new-article.component';
@@ -30,6 +29,8 @@ import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.compo
 import {LoginComponent} from "./components/login/login.component";
 import {CompoComponent} from "./components/compo.component";
 import {ReporteComponent} from "./components/reporte/reporte.component";
+import {GraphicsTresComponent} from "./components/graphics-tres/graphics-tres.component";
+import {ReportePrincipalComponent} from "./components/reporte-principal/reporte-principal.component";
 
 const rutas: Routes = [
     {path: 'dibujos', component: DiagramasComponent},
@@ -38,6 +39,7 @@ const rutas: Routes = [
     {path: 'new-article', component: NewArticleComponent     },
     {path: 'grafico1', component: GraphicsComponent},
     {path: 'grafico2', component: GraphicsDosComponent},
+    {path: 'grafico3', component: GraphicsTresComponent},
     {path: 'alertas', component: AlertasComponent},
     {path: 'admin', component: AdminComponent},
     {path: 'registrogrl', component: RegistroGralComponent},
@@ -51,6 +53,7 @@ const rutas: Routes = [
     {path: 'mapas', component: MapsComponent},
     {path: 'login', component: LoginComponent},
     {path: 'reporte', component: ReporteComponent},
+    {path: 'reporte-principal', component: ReportePrincipalComponent},
     {path: '', redirectTo: '/admin', pathMatch: 'full'},
     {path: 'compo', component: CompoComponent,
       children: [

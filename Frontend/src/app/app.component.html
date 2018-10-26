@@ -13,11 +13,24 @@
           </a>
         </li>
 
+        <!--
         <li class="link">
-          <a routerLink="/reporte">
+          <a routerLink="/reporte-principal">
             <i class="fa fa-folder-open-o" aria-hidden="true"></i>
             <span class="hidden-sm-down hidden-xs-down">Reporte</span>
           </a>
+        </li>
+        -->
+        <li class="link">
+          <a href="#collapse-comments5" data-toggle="collapse" aria-controls="collapse-comments5">
+            <i class="fa fa-area-chart" aria-hidden="true"></i>
+            <span class="hidden-sm-down hidden-xs-down">Reporte</span>
+            <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">10</span>
+          </a>
+          <ul class="collapse collapseable" id="collapse-comments5">
+            <li><a routerLink="/reporte-principal">Reporte por grafico</a></li>
+            <li><a routerLink="/reporte">Reporte por datos</a></li>
+          </ul>
         </li>
 
         <li class="link">
@@ -45,28 +58,29 @@
           </a>
           <ul class="collapse collapseable" id="collapse-comments2">
             <li><a routerLink="/grafico1">Datos actuales</a></li>
-            <li><a routerLink="/grafico2">Datos mensual</a></li>
+            <li><a routerLink="/grafico2">Datos semanal</a></li>
+            <li><a routerLink="/grafico3">Datos mensual</a></li>
           </ul>
         </li>
 
         <li class="link">
-          <a href="#collapse-comments22" data-toggle="collapse" aria-controls="collapse-comments22">
+          <a href="#collapse-comments3" data-toggle="collapse" aria-controls="collapse-comments3">
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
             <span class="hidden-sm-down hidden-xs-down">Alerta</span>
             <span class="badge badge-warning pull-right hidden-sm-down hidden-xs-down">20</span>
           </a>
-          <ul class="collapse collapseable" id="collapse-comments22">
+          <ul class="collapse collapseable" id="collapse-comments3">
             <li><a routerLink="/alertas">Parámetros en alerta</a></li>
           </ul>
         </li>
 
         <li class="link">
-          <a href="#collapse-comments222" data-toggle="collapse" aria-controls="collapse-comments222">
+          <a href="#collapse-comments4" data-toggle="collapse" aria-controls="collapse-comments4">
             <i class="fa fa-book" aria-hidden="true"></i>
             <span class="hidden-sm-down hidden-xs-down">Norma Boliviana 512</span>
             <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
           </a>
-          <ul class="collapse collapseable" id="collapse-comments222">
+          <ul class="collapse collapseable" id="collapse-comments4">
             <li><a routerLink="/normamin">Parámetros de control</a></li>
           </ul>
         </li>
@@ -80,7 +94,6 @@
           <ul class="collapse collapseable" id="collapse-contaminations">
             <li><a routerLink="/contaminacion">OMS</a></li>
           </ul>
-
         </li>
 
 

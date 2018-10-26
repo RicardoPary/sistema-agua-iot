@@ -22,11 +22,11 @@ import {DibujoComponent} from './components/dibujo/dibujo.component';
 import {Dibujo2Component} from './components/dibujo2/dibujo2.component';
 import {Dibujo3Component} from './components/dibujo3/dibujo3.component';
 import {Dibujo4Component} from './components/dibujo4/dibujo4.component';
+import {Dibujo5Component} from "./components/dibujo5/dibujo5.component";
 import {AdminComponent} from './components/admin/admin.component';
 import {NewArticleComponent} from './components/new-article/new-article.component';
 import {DatosTurbiedadComponent} from './components/datos-turbiedad/datos-turbiedad.component';
 import {DetalleAutosComponent} from './components/detalle-autos/detalle-autos.component';
-import {Dibujo5Component} from './components/dibujo5/dibujo5.component';
 import {DatoSalinidadComponent} from './components/dato-salinidad/dato-salinidad.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
@@ -40,6 +40,8 @@ import {GraphicsDosComponent} from './components/graphics-dos/graphics-dos.compo
 import { LoginComponent } from './components/login/login.component';
 import {CompoComponent} from "./components/compo.component";
 import { ReporteComponent } from './components/reporte/reporte.component';
+import { GraphicsTresComponent } from './components/graphics-tres/graphics-tres.component';
+import { ReportePrincipalComponent } from './components/reporte-principal/reporte-principal.component';
 
 @NgModule({
   declarations: [
@@ -66,9 +68,11 @@ import { ReporteComponent } from './components/reporte/reporte.component';
     NormaMinComponent,
     DatoSdtComponent,
     GraphicsDosComponent,
+    GraphicsTresComponent,
     LoginComponent,
     CompoComponent,
-    ReporteComponent
+    ReporteComponent,
+    ReportePrincipalComponent,
   ],
   imports: [
     BrowserModule,

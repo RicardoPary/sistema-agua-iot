@@ -2,8 +2,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import {Dibujo5Component} from "../app/components/dibujo5/dibujo5.component";
 
-import { Dibujo5Component } from '../app/components/dibujo5/dibujo5.component';
+
 
 describe('Dibujo5Component', () => {
   let component: Dibujo5Component;
