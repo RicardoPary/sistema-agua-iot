@@ -1,0 +1,66 @@
+.img-pot{
+  //width: 150%;
+  text-align: center;
+  background: url("../../../assets/images/pota-grafi.jpg") no-repeat;
+  background-size: cover;
+  height: 600px;
+  //overflow: auto;
+}
+.img-pot-2{
+  //width: 150%;
+  text-align: center;
+  background: url("../../../assets/images/pota-grafi.jpg") no-repeat right;
+  background-size: cover;
+  height: 600px;
+  //overflow: auto;
+}
+.btn{
+  width: 90px;
+  height: 35px;
+  color: white;
+  background: #ec6a6a;
+  border-color: #f18f8f;
+  border-radius: 4px;
+  //padding: 8px 35px;
+}
+.btn-n{
+  width: 150px;
+  margin: 15px;
+  color: white;
+  background: #ec6a6a;
+  border-color: #f18f8f;
+  border-radius: 5px;
+  padding: 8px 35px;
+  display: inline-block;
+}
+.btn-1{
+  position: absolute;
+  top: 194px;
+  left: 33px;
+}
+
+.btn-2{
+  position: absolute;
+  top: 194px;
+  left: 549px;
+}
+.btn-3{
+  position: absolute;
+  top: 194px;
+  left: 793px;
+}
+.btn-4{
+  position: absolute;
+  top: 818px;
+  left: 249px;
+}
+.btn-5{
+  position: absolute;
+  top: 818px;
+  left: 367px;
+}
+.btn-6{
+  position: absolute;
+  top: 818px;
+  left: 581px;
+}

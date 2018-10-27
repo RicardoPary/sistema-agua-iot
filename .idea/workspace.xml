@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b27d6fa0-7187-4527-9e4a-926c7429441c" name="Default Changelist" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Frontend/src/assets/images/pota-grafi.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/app.component.html" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/dibujo5/dibujo5.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/components/graphics-dos/graphics-dos.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/routes.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/routes.ts" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/test/dibujo5.component.spec.ts" afterPath="$PROJECT_DIR$/Frontend/src/test/dibujo5.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.scss" afterPath="$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -80,43 +76,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/routes.ts">
+      <file leaf-file-name="figura.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+                <element signature="n#table#0;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
+      <file leaf-file-name="figura.component.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+            <state relative-caret-position="277">
+              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reporte-principal.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reporte-principal.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="85">
+              <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reporte.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html">
+      <file leaf-file-name="registro-gral.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="67" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="-360">
+              <caret line="111" column="9" lean-forward="false" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -137,6 +147,9 @@
       <find>4</find>
       <find>Dibujo5</find>
       <find>repo</find>
+      <find>miModal</find>
+      <find>modal</find>
+      <find>myModalLabel</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +183,6 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/components/login/login.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/login/login.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/admin/admin.component.html" />
-        <option value="$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.scss" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/login/login.component.scss" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/compo.component.ts" />
@@ -188,7 +200,11 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/routes.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.scss" />
         <option value="$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.scss" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.html" />
       </list>
     </option>
   </component>
@@ -229,6 +245,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,7 +286,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="reporte" type="462c0819:PsiDirectoryNode" />
+              <item name="figura" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sistema-agua-iot" type="b2602c69:ProjectViewProjectNode" />
@@ -278,13 +295,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="reporte-principal" type="462c0819:PsiDirectoryNode" />
+              <item name="registro-gral" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,14 +313,15 @@
     <property name="ts.external.directory.path" value="D:\Projects\Projects Angular\sistema-agua-iot\Frontend\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Miriam\PROYECTOS\sistema-agua-iot\Frontend\src\app\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Miriam\PROYECTOS\sistema-agua-iot\Frontend\src\app\components" />
       <recent name="D:\Projects\Projects Angular\sistema-agua-iot\Frontend\src\assets\images" />
       <recent name="D:\Projects\Projects Angular\sistema-agua-iot\Frontend\src\app\services" />
       <recent name="D:\Projects\Projects Angular\sistema-agua-iot\Frontend\src\test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Miriam\PROYECTOS\sistema-agua-iot\Frontend\src\assets\images" />
+      <recent name="C:\Users\Miriam\PROYECTOS\sistema-agua-iot\Frontend\src\app\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -348,15 +365,17 @@
       <workItem from="1540486277103" duration="801000" />
       <workItem from="1540583743153" duration="2867000" />
       <workItem from="1540586905697" duration="1610000" />
-      <workItem from="1540589588899" duration="3184000" />
+      <workItem from="1540589588899" duration="4542000" />
+      <workItem from="1540664751343" duration="10785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44278000" />
+    <option name="totallyTimeSpent" value="56421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20089285" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -366,7 +385,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40460527" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40460527" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -391,16 +410,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/header/header.component.ts" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/footer/footer.component.html" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/shared/components/footer/footer.component.ts" />
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Backend/server-facebook.js" />
     <entry file="file://$PROJECT_DIR$/Backend/server.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -496,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/compo.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/compo.module.ts" />
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="236" column="14" lean-forward="false" selection-start-line="236" selection-start-column="9" selection-end-line="236" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/login/login.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -560,13 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3876">
-          <caret line="228" column="0" lean-forward="true" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/datos-temp/datos-temp.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -578,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -644,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="4218" column="79" lean-forward="false" selection-start-line="4218" selection-start-column="79" selection-end-line="4218" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -652,7 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,7 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="34" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -668,41 +646,120 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/routes.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
+        <state relative-caret-position="282">
           <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/compo.component.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="30" column="55" lean-forward="false" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+        <state relative-caret-position="68">
+          <caret line="69" column="20" lean-forward="true" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3343">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="238" column="25" lean-forward="true" selection-start-line="238" selection-start-column="25" selection-end-line="238" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte/reporte.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="424">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/registro-gral/registro-gral.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="111" column="9" lean-forward="false" selection-start-line="111" selection-start-column="9" selection-end-line="111" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/reporte-principal/reporte-principal.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="50" lean-forward="false" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        <state relative-caret-position="85">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#4;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#6;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

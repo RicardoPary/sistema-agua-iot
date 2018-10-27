@@ -1,0 +1,247 @@
+<div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 20px;">
+  <div class="card img-pot"></div>
+  <br>
+  <div class="card img-pot-2"></div>
+
+  <button class="btn btn-1" data-toggle="modal" data-target="#miModal">Muestra 1</button>
+  <button class="btn btn-2" data-toggle="modal" data-target="#miModa2">Muestra 2</button>
+  <button class="btn btn-3" data-toggle="modal" data-target="#miModa3">Muestra 3</button>
+  <button class="btn btn-4" data-toggle="modal" data-target="#miModa4">Muestra 4</button>
+  <button class="btn btn-5" data-toggle="modal" data-target="#miModa5">Muestra 5</button>
+  <button class="btn btn-6" data-toggle="modal" data-target="#miModa6">Muestra 6</button>
+</div>
+
+
+<!-- btn 1 -->
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="max-width: 890px; margin: 1.7rem auto">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Reporte de la Muestra 1</h4>
+      </div>
+      <table class="table table-striped jambo_table bulk_action ">
+        <thead>
+        <tr class="headings">
+          <th>Nro</th>
+          <th>Temperatura</th>
+          <th>pH</th>
+          <th>Conductividad</th>
+          <th>S.D.T.</th>
+          <th>Salinidad</th>
+          <th>Turbiedad</th>
+          <th>Fecha y hora</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>30</td>
+            <td>7</td>
+            <td>600</td>
+            <td>200</td>
+            <td>988</td>
+            <td>100</td>
+            <td>23/09/18 13:00</td>
+          </tr>
+          <tr *ngFor="let estado of estados">
+            <td>{{estado.marca}}</td>
+            <td>{{estado.modelo}}</td>
+            <td>{{estado.tipo}}</td>
+            <td>{{estado.color}}</td>
+            <td>{{estado.marca}}</td>
+            <td>{{estado.modelo}}</td>
+            <td>{{estado.tipo}}</td>
+            <td>{{estado.color}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="button" value="Aceptar" class="btn-n acep-1" (click)="addSemaforo($event)" data-dismiss="modal">
+      <input type="button" value="Cancelar" class="btn-n canc-1" data-dismiss="modal">
+    </div>
+  </div>
+</div>
+
+<!-- btn 2 -->
+<div class="modal fade" id="miModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabe2" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="max-width: 890px; margin: 1.7rem auto">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabe2">Reporte de la Muestra 2</h4>
+      </div>
+      <table class="table table-striped jambo_table bulk_action ">
+        <thead>
+        <tr class="headings">
+          <th>Nro</th>
+          <th>Temperatura</th>
+          <th>pH</th>
+          <th>Conductividad</th>
+          <th>S.D.T.</th>
+          <th>Salinidad</th>
+          <th>Turbiedad</th>
+          <th>Fecha y hora</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let estado of estados">
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- btn 3 -->
+<div class="modal fade" id="miModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabe3" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="max-width: 890px; margin: 1.7rem auto">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabe3">Reporte de la Muestra 3</h4>
+      </div>
+      <table class="table table-striped jambo_table bulk_action ">
+        <thead>
+        <tr class="headings">
+          <th>Nro</th>
+          <th>Temperatura</th>
+          <th>pH</th>
+          <th>Conductividad</th>
+          <th>S.D.T.</th>
+          <th>Salinidad</th>
+          <th>Turbiedad</th>
+          <th>Fecha y hora</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let estado of estados">
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- btn 4 -->
+<div class="modal fade" id="miModa4" tabindex="-1" role="dialog" aria-labelledby="myModalLabe4" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="max-width: 890px; margin: 1.7rem auto">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabe4">Reporte de la Muestra 4</h4>
+      </div>
+      <table class="table table-striped jambo_table bulk_action ">
+        <thead>
+        <tr class="headings">
+          <th>Nro</th>
+          <th>Temperatura</th>
+          <th>pH</th>
+          <th>Conductividad</th>
+          <th>S.D.T.</th>
+          <th>Salinidad</th>
+          <th>Turbiedad</th>
+          <th>Fecha y hora</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let estado of estados">
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- btn 5 -->
+<div class="modal fade" id="miModa5" tabindex="-1" role="dialog" aria-labelledby="myModalLabe5" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="max-width: 890px; margin: 1.7rem auto">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabe5">Reporte de la Muestra 5</h4>
+      </div>
+      <table class="table table-striped jambo_table bulk_action ">
+        <thead>
+        <tr class="headings">
+          <th>Nro</th>
+          <th>Temperatura</th>
+          <th>pH</th>
+          <th>Conductividad</th>
+          <th>S.D.T.</th>
+          <th>Salinidad</th>
+          <th>Turbiedad</th>
+          <th>Fecha y hora</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let estado of estados">
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- btn 6 -->
+<div class="modal fade" id="miModa6" tabindex="-1" role="dialog" aria-labelledby="myModalLabe6" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="max-width: 890px; margin: 1.7rem auto">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabe6">Reporte de la Muestra 6</h4>
+      </div>
+      <table class="table table-striped jambo_table bulk_action ">
+        <thead>
+        <tr class="headings">
+          <th>Nro</th>
+          <th>Temperatura</th>
+          <th>pH</th>
+          <th>Conductividad</th>
+          <th>S.D.T.</th>
+          <th>Salinidad</th>
+          <th>Turbiedad</th>
+          <th>Fecha y hora</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let estado of estados">
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+          <td>{{estado.marca}}</td>
+          <td>{{estado.modelo}}</td>
+          <td>{{estado.tipo}}</td>
+          <td>{{estado.color}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -42,6 +42,7 @@ import {CompoComponent} from "./components/compo.component";
 import { ReporteComponent } from './components/reporte/reporte.component';
 import { GraphicsTresComponent } from './components/graphics-tres/graphics-tres.component';
 import { ReportePrincipalComponent } from './components/reporte-principal/reporte-principal.component';
+import { FiguraComponent } from './components/figura/figura.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { ReportePrincipalComponent } from './components/reporte-principal/report
     CompoComponent,
     ReporteComponent,
     ReportePrincipalComponent,
+    FiguraComponent,
   ],
   imports: [
     BrowserModule,
