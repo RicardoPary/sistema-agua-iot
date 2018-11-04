@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-figura',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FiguraComponent implements OnInit {
 
-  constructor() { }
+  estados: any;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  addSemaforo(event) {
   }
 
 }
