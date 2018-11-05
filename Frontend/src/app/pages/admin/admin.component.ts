@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { AutosService } from '../../shared/services/autos.service';
-import { SensorService } from '../../shared/services/sensor.service';
+import {Component, OnInit} from '@angular/core';
+import {AutosService} from '../../shared/services/autos.service';
+import {SensorService} from '../../shared/services/sensor.service';
 
 @Component({
   selector: 'app-admin',
@@ -9,29 +9,36 @@ import { SensorService } from '../../shared/services/sensor.service';
 })
 export class AdminComponent implements OnInit {
 
-  registro_flujo:any ;
-  registro_flujo_bus:any;
-  registro_flujo_minibus:any;
-  registro_flujo_pesado:any;
-  registro_flujo_policia:any;
-  registro_flujo_particular:any;
-  registro_flujo_ambulancia:any;
-  registro_infracciones:any;
-  promedio_sensores:any=[];
+  registro_flujo: any;
+  registro_flujo_bus: any;
+  registro_flujo_minibus: any;
+  registro_flujo_pesado: any;
+  registro_flujo_policia: any;
+  registro_flujo_particular: any;
+  registro_flujo_ambulancia: any;
+  registro_infracciones: any;
+  promedio_sensores: any = [];
 
-  id1:any;
-  id2:any;
-  id3:any;
-  id4:any;
-  id5:any;
-  id6:any;
-  id7:any;
-  id8:any;
-  id9:any;
+  id1: any;
+  id2: any;
+  id3: any;
+  id4: any;
+  id5: any;
+  id6: any;
+  id7: any;
+  id8: any;
+  id9: any;
 
-  constructor(private flujo: AutosService,private sensor: SensorService) { }
+  constructor(private flujo: AutosService,
+              private sensor: SensorService,
+              private sensorService: SensorService) {
+  }
 
   ngOnInit() {
+
+    this.sensorService.getAllSensoresAVG().subscribe(
+      res => console.log(res)
+    );
 
     this.getFlujosRegistro();
     this.getFlujosRegistroBus();
@@ -43,82 +50,100 @@ export class AdminComponent implements OnInit {
     this.getRegistroInfracciones();
     this.getPromedio();
 
-    this.id1=setInterval(()=>{this.getFlujosRegistro();},5000);
-    this.id2=setInterval(()=>{this.getFlujosRegistroBus();},5000);
-    this.id3=setInterval(()=>{this.getFlujosRegistroMinibus();},5000);
-    this.id4=setInterval(()=>{this.getFlujosRegistroPolicia();},5000);
-    this.id5=setInterval(()=>{this.getFlujosRegistroPesado();},5000);
-    this.id6=setInterval(()=>{this.getFlujosRegistroParticular();},5000);
-    this.id7=setInterval(()=>{this.getFlujosRegistroAmbulancia();},5000);
-    this.id8=setInterval(()=>{this.getRegistroInfracciones();},5000);
-    this.id9=setInterval(()=>{this.getPromedio();},5000);
+    this.id1 = setInterval(() => {
+      this.getFlujosRegistro();
+    }, 5000);
+    this.id2 = setInterval(() => {
+      this.getFlujosRegistroBus();
+    }, 5000);
+    this.id3 = setInterval(() => {
+      this.getFlujosRegistroMinibus();
+    }, 5000);
+    this.id4 = setInterval(() => {
+      this.getFlujosRegistroPolicia();
+    }, 5000);
+    this.id5 = setInterval(() => {
+      this.getFlujosRegistroPesado();
+    }, 5000);
+    this.id6 = setInterval(() => {
+      this.getFlujosRegistroParticular();
+    }, 5000);
+    this.id7 = setInterval(() => {
+      this.getFlujosRegistroAmbulancia();
+    }, 5000);
+    this.id8 = setInterval(() => {
+      this.getRegistroInfracciones();
+    }, 5000);
+    this.id9 = setInterval(() => {
+      this.getPromedio();
+    }, 5000);
   }
 
-  ngOnDestroy(){
-   
-      clearInterval(this.id1);
-      clearInterval(this.id2);
-      clearInterval(this.id3);
-      clearInterval(this.id4);
-      clearInterval(this.id5);
-      clearInterval(this.id6);
-      clearInterval(this.id7);
-      clearInterval(this.id8);
-      clearInterval(this.id9);
-   
+  ngOnDestroy() {
+
+    clearInterval(this.id1);
+    clearInterval(this.id2);
+    clearInterval(this.id3);
+    clearInterval(this.id4);
+    clearInterval(this.id5);
+    clearInterval(this.id6);
+    clearInterval(this.id7);
+    clearInterval(this.id8);
+    clearInterval(this.id9);
+
   }
 
-  getPromedio():void{
+  getPromedio(): void {
     this.sensor.getPromedio().subscribe(post => {
-    this.promedio_sensores = post;
+      this.promedio_sensores = post;
     });
   }
 
-  getFlujosRegistro():void{
+  getFlujosRegistro(): void {
     this.flujo.getFlujoRegistro().subscribe(post => {
-    this.registro_flujo = post;
+      this.registro_flujo = post;
     });
   }
 
-  getFlujosRegistroBus():void{
+  getFlujosRegistroBus(): void {
     this.flujo.getFlujoRegistroBus().subscribe(post => {
-    this.registro_flujo_bus = post;
+      this.registro_flujo_bus = post;
     });
   }
 
-  getFlujosRegistroMinibus():void{
+  getFlujosRegistroMinibus(): void {
     this.flujo.getFlujoRegistroMinibus().subscribe(post => {
-    this.registro_flujo_minibus = post;
+      this.registro_flujo_minibus = post;
     });
   }
 
-  getFlujosRegistroPesado():void{
+  getFlujosRegistroPesado(): void {
     this.flujo.getFlujoRegistroPesado().subscribe(post => {
-    this.registro_flujo_pesado = post;
+      this.registro_flujo_pesado = post;
     });
   }
 
-  getFlujosRegistroPolicia():void{
+  getFlujosRegistroPolicia(): void {
     this.flujo.getFlujoRegistroPolicia().subscribe(post => {
-    this.registro_flujo_policia = post;
+      this.registro_flujo_policia = post;
     });
   }
 
-  getFlujosRegistroParticular():void{
+  getFlujosRegistroParticular(): void {
     this.flujo.getFlujoRegistroParticular().subscribe(post => {
-    this.registro_flujo_particular = post;
+      this.registro_flujo_particular = post;
     });
   }
 
-  getFlujosRegistroAmbulancia():void{
+  getFlujosRegistroAmbulancia(): void {
     this.flujo.getFlujoRegistroAmbulancia().subscribe(post => {
-    this.registro_flujo_ambulancia = post;
+      this.registro_flujo_ambulancia = post;
     });
   }
 
-  getRegistroInfracciones():void{
+  getRegistroInfracciones(): void {
     this.flujo.getRegistroInfracciones().subscribe(post => {
-    this.registro_infracciones = post;
+      this.registro_infracciones = post;
     });
   }
 

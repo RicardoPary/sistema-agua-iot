@@ -16,6 +16,10 @@ export class SensorService {
     return this.http.get(`${this.urlResource}`, {observe: 'response'});
   }
 
+  getAllSensoresAVG(): Observable<HttpResponse<any>> {
+    return this.http.get(`${this.urlResource}/avg`, {observe: 'response'});
+  }
+
   deleteSensor(id) {
     return this.http.delete('http://localhost:3000/api/sensoresd/' + id).pipe(
       map(res => res)

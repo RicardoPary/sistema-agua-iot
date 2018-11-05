@@ -7,9 +7,9 @@ var sensor = mongojs(db, ['sensor']);
 
 
 /*GET*/
-router.get('/', function(req, res, next){
-    sensor.sensor.find(function(err, data){
-        if(err){
+router.get('/', function (req, res, next) {
+    sensor.sensor.find(function (err, data) {
+        if (err) {
             res.send(err);
         }
         res.json(data);
@@ -17,9 +17,7 @@ router.get('/', function(req, res, next){
 });
 
 
-
 router.get('/:temperatura/:ph/:turbidez/:conductividad', function (req, res) {
-
     var dato = new Date();
     var fecha = dato.getFullYear() + "-" + ((dato.getMonth()) + 1) + "-" + dato.getDate();
     var hora = dato.getHours() + ":" + dato.getMinutes() + ":" + dato.getSeconds();
@@ -37,6 +35,23 @@ router.get('/:temperatura/:ph/:turbidez/:conductividad', function (req, res) {
             res.send(err);
         }
         res.send('Agregado correctamente');
+    });
+});
+
+router.get('/avg', function (req, res) {
+    sensor.sensor.aggregate([{
+        $group: {
+            _id: null,
+            temperatura: {$avg: "temperatura"},
+            ph: {$avg: "ph"},
+            turbidez: {$avg: "turbidez"},
+            conductividad: {$avg: "conductividad"}
+        }
+    }], function (err, data) {
+        if (err) {
+            respuesta.send(err);
+        }
+        res.json(data);
     });
 });
 
@@ -71,22 +86,6 @@ router.get('/:id', function (req, res) {
         fecha: fecha,
         hora: hora
     }, function (err, data) {
-        if (err) {
-            respuesta.send(err);
-        }
-        res.json(data);
-    });
-});
-
-router.get('/sensor/avg/promedio', function (req, res) {
-    sensor.sensor.aggregate([{
-        $group: {
-            _id: null,
-            humo: {$avg: "$humo"},
-            sonido: {$avg: "$sonido"},
-            etanol: {$avg: "$etanol"}
-        }
-    }], function (err, data) {
         if (err) {
             respuesta.send(err);
         }
