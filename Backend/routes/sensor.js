@@ -26,17 +26,17 @@ router.get('/:temperatura/:ph/:turbidez/:conductividad', function (req, res) {
 
     sensor.sensor.insert({
         grupo: parseInt(req.params.grupo),
-        temperatura: parseInt(req.params.temperatura),
-        ph: parseInt(req.params.ph),
-        turbidez: parseInt(req.params.turbidez),
-        conductividad: parseInt(req.params.conductividad),
+        temperatura: parseFloat(req.params.temperatura),
+        ph: parseFloat(req.params.ph),
+        turbidez: parseFloat(req.params.turbidez),
+        conductividad: parseFloat(req.params.conductividad),
         hora: hora,
         fecha: fecha
     }, function (err, data) {
         if (err) {
-            respuesta.send(err);
+            res.send(err);
         }
-        res.json(data);
+        res.send('Agregado correctamente');
     });
 });
 
