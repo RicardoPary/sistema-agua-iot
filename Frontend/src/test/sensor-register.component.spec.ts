@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SensorRegisterComponent } from '../app/components/alertas/alertas.component';
+import { SensorRegisterComponent } from '../app/pages/alertas/alertas.component';
 
 describe('SensorRegisterComponent', () => {
   let component: SensorRegisterComponent;

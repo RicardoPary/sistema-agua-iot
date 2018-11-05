@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { Dibujo2Component } from '../app/components/dibujo2/dibujo2.component';
+import { Dibujo2Component } from '../app/pages/dibujo2/dibujo2.component';
 
 describe('Dibujo2Component', () => {
   let component: Dibujo2Component;

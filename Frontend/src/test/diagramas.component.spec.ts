@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { DiagramasComponent } from '../app/components/diagramas/diagramas.component';
+import { DiagramasComponent } from '../app/pages/diagramas/diagramas.component';
 
 describe('DiagramasComponent', () => {
   let component: DiagramasComponent;

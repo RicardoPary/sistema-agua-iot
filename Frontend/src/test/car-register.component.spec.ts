@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { CarRegisterComponent } from '../app/components/datos-temp/datos-temp.component';
+import { CarRegisterComponent } from '../app/pages/datos-temp/datos-temp.component';
 
 describe('CarRegisterComponent', () => {
   let component: CarRegisterComponent;

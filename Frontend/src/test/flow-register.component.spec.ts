@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { FlowRegisterComponent } from '../app/components/datos-ph/datos-ph.component';
+import { FlowRegisterComponent } from '../app/pages/datos-ph/datos-ph.component';
 
 describe('FlowRegisterComponent', () => {
   let component: FlowRegisterComponent;

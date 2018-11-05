@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SemaphoreGroupComponent } from '../app/components/datos-conduct/datos-conduct.component';
+import { SemaphoreGroupComponent } from '../app/pages/datos-conduct/datos-conduct.component';
 
 describe('SemaphoreGroupComponent', () => {
   let component: SemaphoreGroupComponent;

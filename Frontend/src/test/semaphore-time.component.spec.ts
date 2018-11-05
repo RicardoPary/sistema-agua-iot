@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { SemaphoreTimeComponent } from '../app/components/registro-gral/registro-gral.component';
+import { SemaphoreTimeComponent } from '../app/pages/registro-gral/registro-gral.component';
 
 describe('SemaphoreTimeComponent', () => {
   let component: SemaphoreTimeComponent;

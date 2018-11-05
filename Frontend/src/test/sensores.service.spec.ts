@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { SensorService } from '../app/services/sensor.service';
+import { SensorService } from '../app/shared/services/sensor.service';
 
 describe('SensorService', () => {
   beforeEach(() => {

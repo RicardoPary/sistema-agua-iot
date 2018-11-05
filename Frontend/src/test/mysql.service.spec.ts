@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { MysqlService } from '../app/services/mysql.service';
+import { MysqlService } from '../app/shared/services/mysql.service';
 
 describe('MysqlService', () => {
   beforeEach(() => {

@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { maps } from '../app/components/maps/maps.component';
+import { maps } from '../app/pages/maps/maps.component';
 
 describe('maps', () => {
   let component: maps;
