@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b27d6fa0-7187-4527-9e4a-926c7429441c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Backend/routes/sensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/routes/sensor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/admin/admin.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/shared/services/sensor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/shared/services/sensor.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="b27d6fa0-7187-4527-9e4a-926c7429441c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,7 +15,7 @@
     <session id="861627720">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
@@ -102,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Backend/routes/sensor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -427,18 +423,17 @@
       <workItem from="1540664751343" duration="10785000" />
       <workItem from="1541025915580" duration="3539000" />
       <workItem from="1541365876944" duration="2717000" />
-      <workItem from="1541371316015" duration="12273000" />
+      <workItem from="1541371316015" duration="12429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74950000" />
+    <option name="totallyTimeSpent" value="75106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="9" width="1430" height="788" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21751615" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21751615" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -450,7 +445,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.25316456" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28322786" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.28322786" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.23892406" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -856,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Backend/routes/sensor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="170">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
         </state>
       </provider>
     </entry>
