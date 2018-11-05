@@ -1,19 +1,20 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpResponse} from '@angular/common/http';
 import {map} from 'rxjs/operators';
+import {environment} from "../../environments/environment";
+import {Observable} from "rxjs";
 
 @Injectable()
-export class SensoresService {
+export class SensorService {
+
+  private urlResource = environment.endPoint + 'sensor';
 
   constructor(private http: HttpClient) {
   }
 
-  getAllSensores() {
-    return this.http.get('http://localhost:3000/api/sensores').pipe(
-      map(res => res)
-    );
+  getAllSensores(): Observable<HttpResponse<any>> {
+    return this.http.get(`${this.urlResource}`, {observe: 'response'});
   }
-
 
   deleteSensor(id) {
     return this.http.delete('http://localhost:3000/api/sensoresd/' + id).pipe(

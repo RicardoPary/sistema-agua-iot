@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AutosService } from '../../services/autos.service';
-import { SensoresService } from '../../services/sensores.service';
+import { SensorService } from '../../services/sensor.service';
 
 @Component({
   selector: 'app-admin',
@@ -29,7 +29,7 @@ export class AdminComponent implements OnInit {
   id8:any;
   id9:any;
 
-  constructor(private flujo: AutosService,private sensor: SensoresService) { }
+  constructor(private flujo: AutosService,private sensor: SensorService) { }
 
   ngOnInit() {
 

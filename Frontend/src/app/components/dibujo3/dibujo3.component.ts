@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SensoresService } from '../../services/sensores.service';
+import { SensorService } from '../../services/sensor.service';
 
 @Component({
   selector: 'app-dibujo3',
@@ -11,7 +11,7 @@ export class Dibujo3Component implements OnInit {
   estados: any = [];
   id:any;
    
-  constructor(private postEstados: SensoresService) { }
+  constructor(private postEstados: SensorService) { }
 
   ngOnInit(){
       this.randomize();

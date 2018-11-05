@@ -8,7 +8,7 @@ import {PostService} from './services/post.service';
 import {EstadosService} from './services/estados.service';
 import {MysqlService} from './services/mysql.service';
 import {AutosService} from './services/autos.service';
-import {SensoresService} from './services/sensores.service';
+import {SensorService} from './services/sensor.service';
 import {DatosTempComponent} from './components/datos-temp/datos-temp.component';
 import {DatosPhComponent} from './components/datos-ph/datos-ph.component';
 import {GraphicsComponent} from './components/graphics/graphics.component';
@@ -91,7 +91,7 @@ import { FiguraComponent } from './components/figura/figura.component';
     EstadosService,
     MysqlService,
     AutosService,
-    SensoresService
+    SensorService
   ],
   bootstrap: [AppComponent]
 })

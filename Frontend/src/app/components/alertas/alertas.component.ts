@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SensoresService } from '../../services/sensores.service';
+import { SensorService } from '../../services/sensor.service';
 
 @Component({
   selector: 'app-alertas',
@@ -9,7 +9,7 @@ import { SensoresService } from '../../services/sensores.service';
 export class AlertasComponent implements OnInit {
 
   estados: any = [];
-  constructor(private postEstados: SensoresService) { }
+  constructor(private postEstados: SensorService) { }
 
   ngOnInit() {
 

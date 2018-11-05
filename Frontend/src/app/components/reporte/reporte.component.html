@@ -9,7 +9,8 @@
           </button>
         </li>
         <li>
-          <a class="collapse-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <a class="collapse-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+             aria-controls="collapseExample">
             <i class="fa fa-chevron-up"></i>
           </a>
         </li>
@@ -34,29 +35,25 @@
           <thead>
           <tr class="headings">
             <th>Id</th>
-            <th>Temperatura</th>
-            <th>pH</th>
-            <th>Conductividad</th>
-            <th>S.D.T.</th>
-            <th>Salinidad</th>
-            <th>Turbiedad</th>
             <th>Grupo</th>
-            <th>Ubicación</th>
-            <th>Fecha y hora</th>
+            <th>Temperatura</th>
+            <th>PH</th>
+            <th>Turbidez</th>
+            <th>Conductividad</th>
+            <th>Hora</th>
+            <th>Fecha</th>
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let estado of estados">
-            <td>{{estado.marca}}</td>
-            <td>{{estado.modelo}}</td>
-            <td>{{estado.tipo}}</td>
-            <td>{{estado.color}}</td>
-            <td>{{estado.marca}}</td>
-            <td>{{estado.modelo}}</td>
-            <td>{{estado.tipo}}</td>
-            <td>{{estado.color}}</td>
-            <td>{{estado.marca}}</td>
-            <td>{{estado.modelo}}</td>
+          <tr *ngFor="let sensor of sensores">
+            <td>{{sensor._id}}</td>
+            <td>{{sensor.grupo}}</td>
+            <td>{{sensor.temperatura}}</td>
+            <td>{{sensor.ph}}</td>
+            <td>{{sensor.turbidez}}</td>
+            <td>{{sensor.conductividad}}</td>
+            <td>{{sensor.hora}}</td>
+            <td>{{sensor.fecha}}</td>
           </tr>
           </tbody>
         </table>

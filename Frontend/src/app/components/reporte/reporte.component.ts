@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {SensorService} from "../../services/sensor.service";
 
 @Component({
   selector: 'app-reporte',
@@ -7,12 +8,15 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ReporteComponent implements OnInit {
 
-  estados: any;
+  sensores: any;
 
-  constructor() {
+  constructor(private sensorService: SensorService) {
   }
 
   ngOnInit() {
+    this.sensorService.getAllSensores().subscribe(
+      res => this.sensores = res.body
+    );
   }
 
 }
