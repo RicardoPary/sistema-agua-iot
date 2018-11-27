@@ -27,7 +27,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Point static path to dist
-app.use(express.static(path.join(__dirname, '../Frontend/dist/Frontend')));
+/*app.use(express.static(path.join(__dirname, '../Frontend/dist/Frontend')));*/
 
 // Set our api routes
 app.use('/alerta', alerta);

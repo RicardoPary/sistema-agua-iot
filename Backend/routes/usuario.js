@@ -6,40 +6,52 @@ var mongojs = require('mongojs');
 var usuario = mongojs(db, ['usuario']);
 
 router.get('/', (req, res) => {
-    res.send('api usuario works');
+    usuario.usuario.find(function (err, data) {
+        if (err) {
+            res.send(err);
+        }
+        res.json(data);
+    });
+});
+
+router.get('/:id', function (req, res, next) {
+    usuario.usuario.findOne({_id: mongojs.ObjectId(req.params.id)}, function (err, data) {
+        if (err) {
+            res.send(err);
+        }
+        res.json(data);
+    });
+});
+
+router.post('/estados', function (req, res) {
+    usuario.usuario.save(req.body, function (err, data) {
+        if (err) {
+            res.send(err);
+        }
+        res.json(data);
+    });
+});
+
+router.delete('/:id', function (req, res) {
+    usuario.usuario.remove({_id: mongojs.ObjectId(req.params.id)}, function (err, data) {
+        if (err) {
+            res.send(err);
+        }
+        res.json(data);
+    });
+});
+
+router.put('/:id', function (req, res) {
+    usuario.usuario.update({_id: mongojs.ObjectId(req.params.id)}, req.body, {}, function (err, data) {
+        if (err) {
+            res.send(err);
+        }
+        res.json(data);
+    });
 });
 
 
 /*//PERSONA
-router.get('/posts', function (req, res, next) {
-    persona.persona.find(function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
-
-//SENSOR
-router.get('/sensores', function (req, res, next) {
-    sensor.sensor.find(function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
-router.delete('/sensoresd/:id', function (req, res, next) {
-    sensor.sensor.remove({_id: mongojs.ObjectId(req.params.id)}, function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
 
 //SEMAFORO
 router.get('/grupos', function (req, res, next) {
@@ -70,64 +82,6 @@ router.get('/flujo/:grupo/:flujo', function (req, res, next) {
     });
 });
 
-
-router.delete('/task/:id', function (req, res, next) {
-    semaforo.semaforo.remove({_id: mongojs.ObjectId(req.params.id)}, function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
-router.put('/task/:id', function (req, res, next) {
-    var task = req.body;
-    var updTask = {};
-    if (task.rojo) {
-        updTask.rojo = task.rojo;
-    }
-    if (task.amarillo) {
-        updTask.amarillo = task.amarillo;
-    }
-    if (task.verde) {
-        updTask.verde = task.verde;
-    }
-    if (task.grupo) {
-        updTask.grupo = task.grupo;
-    }
-    if (task.flujo) {
-        updTask.flujo = task.flujo;
-    }
-    if (task.latitud) {
-        updTask.latitud = task.latitud;
-    }
-    if (task.longitud) {
-        updTask.longitud = task.longitud;
-    }
-
-    semaforo.semaforo.update({_id: mongojs.ObjectId(req.params.id)}, updTask, {}, function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
-
-//VEHICULO
-router.get('/mysql', function (req, res, next) {
-
-    res.header('Access-Control-Allow-Origin', '*');
-
-    vehiculo.vehiculo.find(function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
-
 router.get('/agregarauto/:id', function (req, res, next) {
 
     vehiculo.vehiculo.insert({rfid: req.params.id, fecha: fecha, hora: hora}, function (err, data) {
@@ -138,46 +92,6 @@ router.get('/agregarauto/:id', function (req, res, next) {
     });
 
 });
-
-router.delete('/autos/:id', function (req, res, next) {
-    vehiculo.vehiculo.remove({_id: mongojs.ObjectId(req.params.id)}, function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
-
-router.post('/estados', function (req, res, next) {
-    var task = req.body;
-    semaforo.semaforo.save(task, function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-})
-
-router.get('/estados', function (req, res, next) {
-    semaforo.semaforo.find(function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
-
-router.get('/estado/:id', function (req, res, next) {
-    vehiculo.vehiculo.findOne({_id: mongojs.ObjectId(req.params.id)}, function (err, data) {
-        if (err) {
-            res.send(err);
-        }
-        res.json(data);
-    });
-});
-
 
 //FLUJO
 router.get('/flujos', function (req, res, next) {
@@ -237,7 +151,6 @@ router.get('/multashistorial', function (req, res, next) {
 
 
 router.get('/flujo_registro', function (req, res, next) {
-
     flujo_registro.flujo_registro.distinct("rfid", {}, function (err, data) {
         if (err) {
             res.send(err);
@@ -310,6 +223,5 @@ router.get('/flujo_registro/infracciones', function (req, res, next) {
         res.json(data);
     });
 });*/
-
 
 module.exports = router;
