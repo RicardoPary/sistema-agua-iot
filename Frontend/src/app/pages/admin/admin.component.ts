@@ -29,6 +29,19 @@ export class AdminComponent implements OnInit {
   id8: any;
   id9: any;
 
+  avgConductividad: any;
+  avgPH: any;
+  avgTemperatura: any;
+  avgTurbidez: any;
+
+  currentConductividad: any;
+  currentPH: any;
+  currentTemperatura: any;
+  currentTurbidez: any;
+
+  avgDates: any;
+  currentDates: any;
+
   constructor(private flujo: AutosService,
               private sensor: SensorService,
               private sensorService: SensorService) {
@@ -36,11 +49,30 @@ export class AdminComponent implements OnInit {
 
   ngOnInit() {
 
-    this.sensorService.getAllSensoresAVG().subscribe(
-      res => console.log(res)
-    );
+    this.avgDates = setInterval(() => {
+      this.sensorService.getAllSensoresAVG().subscribe(
+        res => {
+          this.avgConductividad = res.body[0].conductividad;
+          this.avgPH = res.body[0].ph;
+          this.avgTemperatura = res.body[0].temperatura;
+          this.avgTurbidez = res.body[0].turbidez;
+        }
+      );
+    }, 5000);
 
-    this.getFlujosRegistro();
+    this.currentDates = setInterval(() => {
+      this.sensorService.getAllSensoresCurrent().subscribe(
+        res => {
+          this.currentConductividad = res.body[0].conductividad;
+          this.currentPH = res.body[0].ph;
+          this.currentTemperatura = res.body[0].temperatura;
+          this.currentTurbidez = res.body[0].turbidez;
+        }
+      );
+    }, 5000);
+
+
+    /*this.getFlujosRegistro();
     this.getFlujosRegistroBus();
     this.getFlujosRegistroMinibus();
     this.getFlujosRegistroPolicia();
@@ -49,11 +81,11 @@ export class AdminComponent implements OnInit {
     this.getFlujosRegistroAmbulancia();
     this.getRegistroInfracciones();
     this.getPromedio();
-
-    this.id1 = setInterval(() => {
+*/
+    /*this.id1 = setInterval(() => {
       this.getFlujosRegistro();
-    }, 5000);
-    this.id2 = setInterval(() => {
+    }, 5000);*/
+    /*this.id2 = setInterval(() => {
       this.getFlujosRegistroBus();
     }, 5000);
     this.id3 = setInterval(() => {
@@ -76,20 +108,21 @@ export class AdminComponent implements OnInit {
     }, 5000);
     this.id9 = setInterval(() => {
       this.getPromedio();
-    }, 5000);
+    }, 5000);*/
   }
 
   ngOnDestroy() {
 
-    clearInterval(this.id1);
-    clearInterval(this.id2);
-    clearInterval(this.id3);
-    clearInterval(this.id4);
-    clearInterval(this.id5);
-    clearInterval(this.id6);
-    clearInterval(this.id7);
-    clearInterval(this.id8);
-    clearInterval(this.id9);
+    clearInterval(this.avgDates);
+    clearInterval(this.currentDates);
+    /* clearInterval(this.id2);
+     clearInterval(this.id3);
+     clearInterval(this.id4);
+     clearInterval(this.id5);
+     clearInterval(this.id6);
+     clearInterval(this.id7);
+     clearInterval(this.id8);
+     clearInterval(this.id9);*/
 
   }
 

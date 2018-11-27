@@ -20,6 +20,10 @@ export class SensorService {
     return this.http.get(`${this.urlResource}/avg`, {observe: 'response'});
   }
 
+  getAllSensoresCurrent(): Observable<HttpResponse<any>> {
+    return this.http.get(`${this.urlResource}/current`, {observe: 'response'});
+  }
+
   deleteSensor(id) {
     return this.http.delete('http://localhost:3000/api/sensoresd/' + id).pipe(
       map(res => res)

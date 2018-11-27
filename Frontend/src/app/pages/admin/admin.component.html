@@ -7,11 +7,11 @@
       <i class="fa fa-clock-o"></i> Temperatura
       </span>
       <div class="count green">
-      {{registro_flujo_minibus}}
+      {{currentTemperatura | number:'3.1-2'}}
       <img src="../../../assets/tempe.png"/>
       </div>
       <span class="count_bottom">
-      <i class="green" >{{(registro_flujo_minibus*100)/registro_flujo | number:'2.2' }}°C </i> Ahora
+      <i class="green" >{{currentTemperatura | number:'3.1-2'}} °C </i> Ahora
       </span>
     </div>
 
@@ -20,12 +20,12 @@
       <i class="fa fa-clock-o"></i> pH
       </span>
       <div class="count">
-      {{registro_flujo_bus}}
+      {{currentPH | number:'3.1-2'}}
       <img src="../../../assets/ph.png"/>
 
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_bus*100)/registro_flujo | number:'2.2' }} </i> Ahora
+      <i class="green">{{currentPH | number:'3.1-2'}}</i> Ahora
       </span>
     </div>
 
@@ -34,11 +34,11 @@
       <i class="fa fa-clock-o"></i> Conductividad
       </span>
       <div class="count green">
-      {{registro_flujo_particular}}
+      {{currentConductividad | number:'3.1-2'}}
       <img src="../../../assets/conducti.png"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_particular*100)/registro_flujo | number:'2.2' }}µS/cm </i> Ahora
+      <i class="green">{{currentConductividad | number:'3.1-2'}} µS/cm </i> Ahora
       </span>
     </div>
 
@@ -73,11 +73,11 @@
       <i class="fa fa-clock-o"></i> Turbiedad
       </span>
       <div class="count green">
-      {{registro_flujo_policia}}
+      {{currentTurbidez | number:'3.1-2'}}
       <img src="../../../assets/turbid.png"/>
       </div>
       <span class="count_bottom">
-      <i class="green" >{{(registro_flujo_policia*100)/registro_flujo | number:'2.2' }}UNT </i> Ahora
+      <i class="green" >{{currentTurbidez | number:'3.1-2'}} UNT </i> Ahora
       </span>
     </div>
 
@@ -87,7 +87,7 @@
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de temperatura
       </span>
-      <div class="count">{{registro_flujo}} °C</div>
+      <div class="count">{{avgTemperatura | number:'3.1-2'}} °C</div>
     </div>
 
 
@@ -95,14 +95,14 @@
       <span class="count_top">
       <i class="fa fa-balance-scale"></i> Promedio de pH
       </span>
-      <div class="count">{{registro_infracciones}}</div>
+      <div class="count">{{avgPH | number:'3.1-2'}}</div>
     </div>
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Conductividad
       </span>
-      <div class="count">{{promedio_sensores.humo}}µS/cm </div>
+      <div class="count">{{avgConductividad | number:'3.1-2'}}µS/cm </div>
     </div>
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
@@ -123,7 +123,7 @@
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Turbiedad
       </span>
-      <div class="count">{{registro_infracciones}} UNT</div>
+      <div class="count">{{avgTurbidez | number:'3.1-2'}} UNT</div>
     </div>
 
   </div>
