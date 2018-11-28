@@ -58,7 +58,7 @@ export class AdminComponent implements OnInit {
           this.avgTurbidez = res.body[0].turbidez;
         }
       );
-    }, 5000);
+    }, 2000);
 
     this.currentDates = setInterval(() => {
       this.sensorService.getAllSensoresCurrent().subscribe(
@@ -69,7 +69,7 @@ export class AdminComponent implements OnInit {
           this.currentTurbidez = res.body[0].turbidez;
         }
       );
-    }, 5000);
+    }, 2000);
 
 
     /*this.getFlujosRegistro();
