@@ -1,113 +1,71 @@
 import {Component, OnInit} from '@angular/core';
-import { SensorService } from '../../shared/services/sensor.service';
+import {SensorService} from '../../shared/services/sensor.service';
 
 @Component({
   selector: 'app-dibujo',
-  templateUrl: './dibujo.component.html',
+  template: `
+    <div class="col-md-12">
+      <div style="display: block;" *ngIf="lineChartData.length > 0">
+        <canvas baseChart width="418" height="209"
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [legend]="lineChartLegend"
+                [chartType]="lineChartType"></canvas>
+      </div>
+    </div>
+  `,
   styleUrls: ['./dibujo.component.scss']
 })
-export class DibujoComponent{
+export class DibujoComponent implements OnInit {
 
-  estados: any = [];
-  id:any;
-   
-  constructor(private postEstados: SensorService) { }
+  data: any = [];
+  id: any;
 
-  ngOnInit(){
-      this.randomize();
-      this.id=setInterval(()=>{this.randomize();},1000);
+  lineChartData: Array<any> = [];
+  lineChartLabels: Array<any> = [];
+  lineChartOptions: any = {responsive: true};
+  lineChartLegend = true;
+  lineChartType = 'line';
+
+  constructor(private sensorService: SensorService) {
+
   }
 
-  ngOnDestroy(){
-      if(this.id){
-        clearInterval(this.id);
-      }
-  }
-  
-  
-  public humo():Array<any> {
-  let cadena:Array<any>=new Array();
-  let j:number=0;    
-      for (let i of this.estados) {
-        cadena[j]=i.humo;
-        j=j+1;
-        }  
-  return cadena;  
+  ngOnInit() {
+    this.loadChart();
+    this.id = setInterval(() => {
+      this.loadChart();
+    }, 1000);
   }
 
-
-  public sonido():Array<any> {
-  let cadena:Array<any>=new Array();
-  let j:number=0;    
-      for (let i of this.estados) {
-        cadena[j]=i.sonido;
-        j=j+1;
-        }  
-  return cadena;  
-  }
-
-
-  public hora():Array<any> {
-  let cadena:Array<any>=new Array();
-  let j:number=0;    
-      for (let i of this.estados) {
-        cadena[j]=i.hora;
-        j=j+1;
-        }  
-  return cadena;  
-  }
-
-  public lineChartData:Array<any> = [
-    {data: [1,23,5,6,8,9,0,5,3,3,5,6,12], label: 'Humo'},
-    {data: [28, 48, 40, 19, 86, 27, 90], label: 'Sonido'}
-  ];
-  public lineChartLabels:Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  public lineChartOptions:any = {
-    responsive: true
-  };
-  public lineChartColors:Array<any> = [
-    { // grey
-      backgroundColor: 'rgba(83, 200, 175, 0.4)',
-      borderColor: '#53C8AF',
-      pointBackgroundColor: '#53C8AF',
-      pointBorderColor: '#53C8AF',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
-    },
-    { // dark grey
-      backgroundColor: 'rgba(56, 124, 138, 0.4)',
-      borderColor: '#387C8A',
-      pointBackgroundColor: '#387C8A',
-      pointBorderColor: '#387C8A',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(77,83,96,1)'
+  ngOnDestroy() {
+    if (this.id) {
+      clearInterval(this.id);
     }
-  ];
-  public lineChartLegend:boolean = true;
-  public lineChartType:string = 'line';
-
-  
-  public randomize():void {
-
-  this.postEstados.getAllSensores().subscribe(estados => {
-      this.estados = estados;
-  	  });
-
-  let _lineChartLabels:Array<any> = this.hora();
-  let _lineChartData:Array<any> = [
-    {data: this.humo(), label: 'Humo'},
-    {data: this.sonido(), label: 'Sonido'},
-  ];
-  this.lineChartData=_lineChartData;
-  this.lineChartLabels=_lineChartLabels;
   }
 
-  // events
-  public chartClicked(e:any):void {
-    console.log(e);
+  getSensorData(data, type: any): Array<any> {
+    let dataAux: Array<any> = new Array();
+    for (let i = 0; i < data.length; i++) {
+      dataAux[i] = data[i][type];
+    }
+    return dataAux;
   }
 
-  public chartHovered(e:any):void {
-    console.log(e);
+  loadChart() {
+    this.sensorService.getAllSensores().subscribe(res => {
+      this.lineChartData = [
+        {data: [null], label: 'Temperatura'},
+        {data: [null], label: 'PH'},
+        {data: [null], label: 'Turbidez'},
+        {data: [null], label: 'Conductividad'}
+      ];
+      this.lineChartLabels = this.getSensorData(res.body, 'hora');
+      this.lineChartData[0].data = this.getSensorData(res.body, 'temperatura');
+      this.lineChartData[1].data = this.getSensorData(res.body, 'ph');
+      this.lineChartData[2].data = this.getSensorData(res.body, 'turbidez');
+      this.lineChartData[3].data = this.getSensorData(res.body, 'conductividad');
+    });
   }
 }
