@@ -1,6 +1,8 @@
 import {Semaphore} from '../../shared/models/semaphore';
-import {Component, OnInit} from '@angular/core';
 import {EstadosService} from '../../shared/services/estados.service';
+import {Component, OnInit} from '@angular/core';
+import {AutosService} from "../../shared/services/autos.service";
+import {SensorService} from "../../shared/services/sensor.service";
 
 
 @Component({
@@ -10,67 +12,130 @@ import {EstadosService} from '../../shared/services/estados.service';
 })
 export class RegistroGralComponent implements OnInit {
 
-  semaforos: any[];
-  id: any;
-  id2: any;
-  semaforo: Semaphore = new Semaphore();
-  flujos: any = [];
-  flujos2: any = [];
+  avgConductividad: any;
+  avgPH: any;
+  avgTemperatura: any;
+  avgTurbidez: any;
 
-  constructor(private servicioSemaphore: EstadosService) {
+  currentConductividad: any;
+  currentPH: any;
+  currentTemperatura: any;
+  currentTurbidez: any;
+
+  avgDates: any;
+  currentDates: any;
+
+  constructor(private flujo: AutosService,
+              private sensor: SensorService,
+              private sensorService: SensorService) {
   }
 
   ngOnInit() {
-    this.cargar();
-    this.id = setInterval(() => {
-      this.cargar();
-    }, 1000);
+
+    this.avgDates = setInterval(() => {
+      this.sensorService.getAllSensoresAVG().subscribe(
+        res => {
+          this.avgConductividad = res.body[0].conductividad;
+          this.avgPH = res.body[0].ph;
+          this.avgTemperatura = res.body[0].temperatura;
+          this.avgTurbidez = res.body[0].turbidez;
+        }
+      );
+    }, 2000);
+
+    this.currentDates = setInterval(() => {
+      this.sensorService.getAllSensoresCurrent().subscribe(
+        res => {
+          this.currentConductividad = res.body[0].conductividad;
+          this.currentPH = res.body[0].ph;
+          this.currentTemperatura = res.body[0].temperatura;
+          this.currentTurbidez = res.body[0].turbidez;
+        }
+      );
+    }, 2000);
   }
 
   ngOnDestroy() {
-    if (this.id) {
-      clearInterval(this.id);
-    }
+    clearInterval(this.avgDates);
+    clearInterval(this.currentDates);
   }
+}
 
 
-  cargar(): void {
-    this.servicioSemaphore.getAllEstados().subscribe(semaforos => {
-      this.semaforos = semaforos.body;
+
+
+
+
+
+
+
+
+
+
+/*
+
+export class RegistroGralComponent implements OnInit {
+semaforos: any[];
+id: any;
+id2: any;
+semaforo: Semaphore = new Semaphore();
+flujos: any = [];
+flujos2: any = [];
+
+constructor(private servicioSemaphore: EstadosService) {
+}
+
+ngOnInit() {
+  this.cargar();
+  this.id = setInterval(() => {
+    this.cargar();
+  }, 1000);
+}
+
+ngOnDestroy() {
+  if (this.id) {
+    clearInterval(this.id);
+  }
+}
+
+
+cargar(): void {
+  this.servicioSemaphore.getAllEstados().subscribe(semaforos => {
+    this.semaforos = semaforos.body;
+  });
+
+  this.servicioSemaphore.getAllFlujos().subscribe(flujos => {
+    this.flujos = flujos;
+  });
+
+
+}
+
+
+addSemaforo(event) {
+  event.preventDefault();
+  this.servicioSemaphore.addEstado(this.semaforo)
+    .subscribe(semaforo => {
+      this.semaforos.push(semaforo);
     });
-
-    this.servicioSemaphore.getAllFlujos().subscribe(flujos => {
-      this.flujos = flujos;
-    });
+  this.reset();
+}
 
 
-  }
-
-
-  addSemaforo(event) {
-    event.preventDefault();
-    this.servicioSemaphore.addEstado(this.semaforo)
-      .subscribe(semaforo => {
-        this.semaforos.push(semaforo);
-      });
-    this.reset();
-  }
-
-
-  /*deleteSemaforo(id) {
-    var estado = this.semaforos;
-    this.servicioSemaphore.deleteEstado(id).subscribe(data => {
-      if (data.n == 1) {
-        for (var i = 0; i < estado.length; i++) {
-          if (estado[i]._id == id) {
-            estado.splice(i, 1);
-          }
+/*deleteSemaforo(id) {
+  var estado = this.semaforos;
+  this.servicioSemaphore.deleteEstado(id).subscribe(data => {
+    if (data.n == 1) {
+      for (var i = 0; i < estado.length; i++) {
+        if (estado[i]._id == id) {
+          estado.splice(i, 1);
         }
       }
-    });
-  }*/
+    }
+  });
+}*/
 
-
+/*
   updateEstado2(estado) {
     this.semaforo = estado;
   }
@@ -129,7 +194,7 @@ export class RegistroGralComponent implements OnInit {
       }
       /*else{
           cantidad=parseInt(""+Math.random()*(10-1)+1);
-      }*/
+      }*/ /*
     }
     return cantidad;
   }
@@ -146,7 +211,7 @@ export class RegistroGralComponent implements OnInit {
       }
       /*else{
           cantidad=parseInt(""+Math.random()*(10-1)+1);
-      }*/
+      }*/ /*
     }
     return prioridad;
   }
@@ -163,12 +228,12 @@ export class RegistroGralComponent implements OnInit {
       }
       /*else{
           cantidad=parseInt(""+Math.random()*(10-1)+1);
-      }*/
+      }*/ /*
     }
     return cantidad;
   }
 
-}
+}*/
 
 
 

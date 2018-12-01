@@ -4,7 +4,7 @@ import {SensorService} from '../../shared/services/sensor.service';
 @Component({
   selector: 'app-dibujo',
   template: `
-    <div class="col-md-12">
+    <div style="flex: 0 0 95%;max-width:95%;">
       <div style="display: block;" *ngIf="lineChartData.length > 0">
         <canvas baseChart width="418" height="209"
                 [datasets]="lineChartData"
