@@ -82,7 +82,7 @@
     </div>
 
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de temperatura
       </span>
@@ -90,35 +90,35 @@
     </div>
 
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i> Promedio de pH
       </span>
       <div class="count">{{avgPH | number:'2.1-2'}}</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Conductividad
       </span>
       <div class="count">{{avgConductividad | number:'3.1-2'}}µS/cm</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Promedio de SDT
       </span>
       <div class="count">{{avgConductividad*0.5 | number:'3.1-2'}} ppm</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Salinidad
       </span>
       <div class="count">{{avgConductividad*0+0.5 | number:'1.2'}}PSU</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Turbiedad
       </span>
@@ -130,7 +130,7 @@
 
   <div class="row">
     <!-- Actividades recientes -->
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3">
       <div class="x_panel">
         <div class="x_title">
           <h2>Información Importante</h2>
@@ -195,7 +195,7 @@
     </div>
 
 
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-9">
 
       <div class="row">
 
@@ -243,7 +243,7 @@
                   </div>
                 </div>
 
-                <div class="w_right w_20"><span>{{avgTemperatura | number:'2.2' }} %</span>
+                <div class="w_right w_20"><span>{{avgTemperatura | number:'2.1-2'}}°C</span>
                 </div>
                 <div class="clearfix"></div>
               </div>
@@ -259,7 +259,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="w_right w_20"><span>{{avgPH | number:'2.2' }} %</span>
+                <div class="w_right w_20"><span>{{avgPH | number:'2.2' }} </span>
                 </div>
                 <div class="clearfix"></div>
               </div>
@@ -269,13 +269,13 @@
                 <div class="w_center w_55">
                   <div class="progress">
                     <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_particular*100)/registro_flujo) +'%'}">
-                      <span class="sr-only">60% Complete</span>
+                         aria-valuemax="100" [ngStyle]="{width: avgConductividad +'%'}">
+                      <span class="sr-only">{{avgConductividad}}% Complete</span>
                     </div>
                   </div>
                 </div>
                 <div class="w_right w_20">
-                  <span>{{(registro_flujo_particular*100)/registro_flujo | number:'2.2' }} %</span></div>
+                  <span>{{avgConductividad | number:'3.1-2'}}µS/cm</span></div>
                 <div class="clearfix"></div>
               </div>
 
@@ -284,17 +284,18 @@
                 <div class="w_center w_55">
                   <div class="progress">
                     <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                         aria-valuemax="100" [ngStyle]="{width: ((registro_flujo_pesado*100)/registro_flujo) +'%'}">
-                      <span class="sr-only">60% Complete</span>
+                         aria-valuemax="100" [ngStyle]="{width: (avgConductividad*0.5) +'%'}">
+                      <span class="sr-only">{{avgConductividad*0.5}}% Complete</span>
                     </div>
                   </div>
                 </div>
-                <div class="w_right w_20"><span>{{(registro_flujo_pesado*100)/registro_flujo | number:'2.2' }} %</span>
+                <div class="w_right w_20">
+                  <span>{{avgConductividad | number:'3.1-2'}}mg/l</span>
                 </div>
                 <div class="clearfix"></div>
               </div>
 
-              <div class="widget_summary">
+              <!--<div class="widget_summary">
                 <div class="w_left w_25"><span>Salinidad</span></div>
                 <div class="w_center w_55">
                   <div class="progress">
@@ -307,7 +308,7 @@
                 <div class="w_right w_20">
                   <span>{{(registro_flujo_ambulancia*100)/registro_flujo | number:'2.2' }} %</span></div>
                 <div class="clearfix"></div>
-              </div>
+              </div>-->
 
               <div class="widget_summary">
                 <div class="w_left w_25"><span>Turbiedad</span></div>
@@ -319,7 +320,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="w_right w_20"><span>{{avgTurbidez | number:'2.2' }} %</span>
+                <div class="w_right w_20"><span>{{avgTurbidez | number:'1.1-2'}}UNT</span>
                 </div>
                 <div class="clearfix"></div>
               </div>
@@ -332,7 +333,7 @@
 
       <div class="row" style="margin-bottom: 50px">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <div class="x_panel tile fixed_height_320 overflow_hidden">
+          <div class="x_panel tile fixed_height_390 overflow_hidden">
             <div class="x_title">
               <h2>Parámetros mínimos de la calidad del Agua</h2>
               <ul class="nav navbar-right panel_toolbox">
@@ -367,26 +368,26 @@
                   </td>
 
                   <td>
-                    <table class="tile_info">
+                    <table class="tile_info" style="">
                       <tr>
-                        <td><p><i class="fa fa-square blue"></i>pH </p></td>
-                        <td>30%</td>
+                        <td><p><i class="fa fa-square red"></i>Temperatura </p></td>
+                        <td>{{avgTemperatura | number:'2.1-2'}}</td>
                       </tr>
                       <tr>
-                        <td><p><i class="fa fa-square green"></i>Conductividad </p></td>
-                        <td>10%</td>
+                        <td><p><i class="fa fa-square blue"></i>pH </p></td>
+                        <td>{{avgPH | number:'2.1-2'}}</td>
+                      </tr>
+                      <tr>
+                        <td><p><i class="fa fa-square green"></i>CE </p></td>
+                        <td>{{avgConductividad | number:'3.1-2'}}</td>
                       </tr>
                       <tr>
                         <td><p><i class="fa fa-square purple"></i>SDT </p></td>
-                        <td>20%</td>
+                        <td>{{avgConductividad*0.5 | number:'3.1-2'}}</td>
                       </tr>
                       <tr>
-                        <td><p><i class="fa fa-square aero"></i>Salinidad </p></td>
-                        <td>15%</td>
-                      </tr>
-                      <tr>
-                        <td><p><i class="fa fa-square red"></i>Turbiedad </p></td>
-                        <td>30%</td>
+                        <td><p><i class="fa fa-square aero"></i>Turbiedad </p></td>
+                        <td>{{avgTurbidez | number:'1.1-2'}}</td>
                       </tr>
                     </table>
                   </td>
@@ -401,3 +402,5 @@
     </div>
   </div>
 </div>
+
+
