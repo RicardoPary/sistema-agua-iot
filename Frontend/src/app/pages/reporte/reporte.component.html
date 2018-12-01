@@ -35,11 +35,11 @@
           <thead>
           <tr class="headings">
             <th>Id</th>
-            <th>Grupo</th>
             <th>Temperatura</th>
-            <th>PH</th>
-            <th>Turbidez</th>
+            <th>pH</th>
             <th>Conductividad</th>
+            <th>TDS</th>
+            <th>Turbiedad</th>
             <th>Hora</th>
             <th>Fecha</th>
           </tr>
@@ -47,11 +47,11 @@
           <tbody>
           <tr *ngFor="let sensor of sensores">
             <td>{{sensor._id}}</td>
-            <td>{{sensor.grupo}}</td>
             <td>{{sensor.temperatura}}</td>
             <td>{{sensor.ph}}</td>
-            <td>{{sensor.turbidez}}</td>
             <td>{{sensor.conductividad}}</td>
+            <td>{{sensor.conductividad*0.5}}</td>
+            <td>{{sensor.turbidez}}</td>
             <td>{{sensor.hora}}</td>
             <td>{{sensor.fecha}}</td>
           </tr>

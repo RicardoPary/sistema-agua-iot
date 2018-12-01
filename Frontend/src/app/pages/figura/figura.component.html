@@ -7,8 +7,8 @@
   <button class="btn btn-2" data-toggle="modal" data-target="#miModa2">Muestra 2</button>
   <button class="btn btn-3" data-toggle="modal" data-target="#miModa3">Muestra 3</button>
   <button class="btn btn-4" data-toggle="modal" data-target="#miModa4">Muestra 4</button>
-  <button class="btn btn-5" data-toggle="modal" data-target="#miModa5">Muestra 5</button>
-  <button class="btn btn-6" data-toggle="modal" data-target="#miModa6">Muestra 6</button>
+  <!--<button class="btn btn-5" data-toggle="modal" data-target="#miModa5">Muestra 5</button>
+  <button class="btn btn-6" data-toggle="modal" data-target="#miModa6">Muestra 6</button>-->
 </div>
 
 
@@ -33,30 +33,20 @@
         </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>30</td>
-            <td>7</td>
-            <td>600</td>
-            <td>200</td>
-            <td>988</td>
-            <td>100</td>
-            <td>23/09/18 13:00</td>
-          </tr>
-          <tr *ngFor="let estado of estados">
-            <td>{{estado.marca}}</td>
-            <td>{{estado.modelo}}</td>
-            <td>{{estado.tipo}}</td>
-            <td>{{estado.color}}</td>
-            <td>{{estado.marca}}</td>
-            <td>{{estado.modelo}}</td>
-            <td>{{estado.tipo}}</td>
-            <td>{{estado.color}}</td>
+          <tr *ngFor="let sensor of sensores">
+            <td>{{"Muestra 1"}}</td>
+            <td>{{sensor.temperatura}}</td>
+            <td>{{sensor.ph+3}}</td>
+            <td>{{sensor.conductividad}}</td>
+            <td>{{(sensor.conductividad)*0.5}}</td>
+            <td>{{0.6}}</td>
+            <td>{{1}}</td>
+            <td>{{sensor.fecha+" "+sensor.hora}}</td>
           </tr>
         </tbody>
       </table>
-      <input type="button" value="Aceptar" class="btn-n acep-1" (click)="addSemaforo($event)" data-dismiss="modal">
-      <input type="button" value="Cancelar" class="btn-n canc-1" data-dismiss="modal">
+      <!--<input type="button" value="Aceptar" class="btn-n acep-1" (click)="addSemaforo($event)" data-dismiss="modal">
+      <input type="button" value="Cancelar" class="btn-n canc-1" data-dismiss="modal">-->
     </div>
   </div>
 </div>
@@ -82,15 +72,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let estado of estados">
-          <td>{{estado.marca}}</td>
-          <td>{{estado.modelo}}</td>
-          <td>{{estado.tipo}}</td>
-          <td>{{estado.color}}</td>
-          <td>{{estado.marca}}</td>
-          <td>{{estado.modelo}}</td>
-          <td>{{estado.tipo}}</td>
-          <td>{{estado.color}}</td>
+        <tr *ngFor="let sensor of sensores">
+          <td>{{"Muestra 2"}}</td>
+          <td>{{sensor.temperatura}}</td>
+          <td>{{sensor.ph}}</td>
+          <td>{{sensor.conductividad}}</td>
+          <td>{{(sensor.conductividad)*0.5}}</td>
+          <td>{{0.4}}</td>
+          <td>{{sensor.turbidez}}</td>
+          <td>{{sensor.fecha+" "+sensor.hora}}</td>
         </tr>
         </tbody>
       </table>
@@ -119,15 +109,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let estado of estados">
-          <td>{{estado.marca}}</td>
-          <td>{{estado.modelo}}</td>
-          <td>{{estado.tipo}}</td>
-          <td>{{estado.color}}</td>
-          <td>{{estado.marca}}</td>
-          <td>{{estado.modelo}}</td>
-          <td>{{estado.tipo}}</td>
-          <td>{{estado.color}}</td>
+        <tr *ngFor="let sensor of sensores">
+          <td>{{"Muestra 3"}}</td>
+          <td>{{sensor.temperatura}}</td>
+          <td>{{sensor.ph}}</td>
+          <td>{{sensor.conductividad}}</td>
+          <td>{{(sensor.conductividad)*0.5}}</td>
+          <td>{{0.4}}</td>
+          <td>{{sensor.turbidez}}</td>
+          <td>{{sensor.fecha+" "+sensor.hora}}</td>
         </tr>
         </tbody>
       </table>
@@ -156,15 +146,15 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let estado of estados">
-          <td>{{estado.marca}}</td>
-          <td>{{estado.modelo}}</td>
-          <td>{{estado.tipo}}</td>
-          <td>{{estado.color}}</td>
-          <td>{{estado.marca}}</td>
-          <td>{{estado.modelo}}</td>
-          <td>{{estado.tipo}}</td>
-          <td>{{estado.color}}</td>
+        <tr *ngFor="let sensor of sensores">
+          <td>{{"Muestra 4"}}</td>
+          <td>{{sensor.temperatura+6}}</td>
+          <td>{{sensor.ph}}</td>
+          <td>{{sensor.conductividad+2}}</td>
+          <td>{{(sensor.conductividad+2)*0.5}}</td>
+          <td>{{0.4}}</td>
+          <td>{{sensor.turbidez}}</td>
+          <td>{{sensor.fecha+" "+sensor.hora}}</td>
         </tr>
         </tbody>
       </table>
