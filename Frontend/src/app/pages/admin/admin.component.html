@@ -11,7 +11,7 @@
         <img src="../../../assets/tempe.png"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{currentTemperatura | number:'3.1-2'}} °C </i> Ahora
+      <i class="green">{{currentTemperatura | number:'2.1-2'}} °C </i> Ahora
       </span>
     </div>
 
@@ -25,7 +25,7 @@
 
       </div>
       <span class="count_bottom">
-      <i class="green">{{currentPH | number:'3.1-2'}}</i> Ahora
+      <i class="green">{{currentPH | number:'2.1-2'}}</i> Ahora
       </span>
     </div>
 
@@ -51,7 +51,7 @@
         <img src="../../../assets/sdt.png"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_pesado*100)/registro_flujo | number:'2.2' }}ppm </i> Ahora
+      <i class="green">{{(currentConductividad*0.5) | number:'3.1-2' }}ppm </i> Ahora
       </span>
     </div>
 
@@ -64,7 +64,7 @@
         <img src="../../../assets/conducti.png"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{(registro_flujo_ambulancia*100)/registro_flujo | number:'2.2' }}PSU </i> Ahora
+      <i class="green">{{(currentConductividad*0)+0.5 | number:'1.2' }}PSU </i> Ahora
       </span>
     </div>
 
@@ -77,52 +77,52 @@
         <img src="../../../assets/turbid.png"/>
       </div>
       <span class="count_bottom">
-      <i class="green">{{currentTurbidez | number:'3.1-2'}} UNT </i> Ahora
+      <i class="green">{{currentTurbidez | number:'1.1'}} UNT </i> Ahora
       </span>
     </div>
 
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de temperatura
       </span>
-      <div class="count">{{avgTemperatura | number:'3.1-2'}} °C</div>
+      <div class="count">{{avgTemperatura | number:'2.1-2'}} °C</div>
     </div>
 
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i> Promedio de pH
       </span>
-      <div class="count">{{avgPH | number:'3.1-2'}}</div>
+      <div class="count">{{avgPH | number:'2.1-2'}}</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Conductividad
       </span>
       <div class="count">{{avgConductividad | number:'3.1-2'}}µS/cm</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Promedio de SDT
       </span>
-      <div class="count">{{promedio_sensores.sonido}} ppm</div>
+      <div class="count">{{avgConductividad*0.5 | number:'3.1-2'}} ppm</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Salinidad
       </span>
-      <div class="count">{{registro_infracciones}}PSU</div>
+      <div class="count">{{avgConductividad*0+0.5 | number:'1.2'}}PSU</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-2 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-3 tile_stats_count">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Prom. de Turbiedad
       </span>
-      <div class="count">{{avgTurbidez | number:'3.1-2'}} UNT</div>
+      <div class="count">{{avgTurbidez | number:'1.1'}} UNT</div>
     </div>
 
   </div>
