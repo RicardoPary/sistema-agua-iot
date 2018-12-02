@@ -46,7 +46,6 @@ import {Router} from "@angular/router";
                 <li><a [routerLinkActive]="['active']" [routerLink]="'datosconduct'">Datos de Conductividad</a></li>
                 <li><a [routerLinkActive]="['active']" [routerLink]="'datosdt'">Datos de Sólidos Disueltos Totales</a>
                 </li>
-                <li><a [routerLinkActive]="['active']" [routerLink]="'datosalinidad'">Datos de Salinidad</a></li>
                 <li><a [routerLinkActive]="['active']" [routerLink]="'datosturbiedad'">Datos de Turbiedad</a></li>
               </ul>
             </li>
