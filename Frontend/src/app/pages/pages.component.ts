@@ -55,7 +55,6 @@ import {Router} from "@angular/router";
               <a href="#collapse-comments2" data-toggle="collapse" aria-controls="collapse-comments2">
                 <i class="fa fa-area-chart" aria-hidden="true"></i>
                 <span class="hidden-sm-down hidden-xs-down">Estádistica</span>
-                <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
               </a>
               <ul class="collapse collapseable" id="collapse-comments2">
                 <li><a [routerLinkActive]="['active']" [routerLink]="'grafico1'">Datos actuales</a></li>
@@ -68,7 +67,7 @@ import {Router} from "@angular/router";
               <a href="#collapse-comments3" data-toggle="collapse" aria-controls="collapse-comments3">
                 <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                 <span class="hidden-sm-down hidden-xs-down">Alerta</span>
-                <span class="badge badge-warning pull-right hidden-sm-down hidden-xs-down">20</span>
+                <span class="badge badge-warning pull-right hidden-sm-down hidden-xs-down">2</span>
               </a>
               <ul class="collapse collapseable" id="collapse-comments3">
                 <li><a [routerLinkActive]="['active']" [routerLink]="'alertas'">Parámetros en alerta</a></li>
@@ -79,7 +78,6 @@ import {Router} from "@angular/router";
               <a href="#collapse-comments4" data-toggle="collapse" aria-controls="collapse-comments4">
                 <i class="fa fa-book" aria-hidden="true"></i>
                 <span class="hidden-sm-down hidden-xs-down">Norma Boliviana 512</span>
-                <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
               </a>
               <ul class="collapse collapseable" id="collapse-comments4">
                 <li><a [routerLinkActive]="['active']" [routerLink]="'normamin'">Parámetros de control</a></li>
@@ -90,7 +88,6 @@ import {Router} from "@angular/router";
               <a href="#collapse-contaminations" data-toggle="collapse" aria-controls="collapse-contaminations">
                 <i class="fa fa-question-circle" aria-hidden="true"></i>
                 <span class="hidden-sm-down hidden-xs-down">Ayuda</span>
-                <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down">20</span>
               </a>
               <ul class="collapse collapseable" id="collapse-contaminations">
                 <li><a [routerLinkActive]="['active']" [routerLink]="'contaminacion'">OMS</a></li>

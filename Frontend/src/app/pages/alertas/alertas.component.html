@@ -36,7 +36,9 @@
             <td>10:10:00</td>
             <td>Temperatura</td>
             <td>100</td>
-            <td><input type="text" placeholder="Niguna" style="border: none"></td>
+            <td>
+              <span class="badge badge-primary pull-right hidden-sm-down hidden-xs-down" style="margin: 20px">VISTO</span>
+            </td>
           </tr>
 
           <tr>
@@ -44,45 +46,57 @@
             <td>1:10:00</td>
             <td>pH</td>
             <td>10</td>
-            <td><input type="text" placeholder="Niguna" style="border: none"></td>
+            <td>
+              <span class="badge badge-primary pull-right hidden-sm-down hidden-xs-down" style="margin: 20px">VISTO</span>
+            </td>
           </tr>
           <tr>
-            <td>12/109/2018</td>
-            <td>4:00:10</td>
+            <td>12/02/2018</td>
+            <td>10:00:10</td>
             <td>Conductividad</td>
             <td>1530</td>
-            <td><input type="text" placeholder="Niguna" style="border: none"></td>
+            <td>
+              <span class="badge badge-danger pull-right hidden-sm-down hidden-xs-down" style="margin: 20px">NO VISTO</span>
+            </td>
           </tr>
           <tr>
             <td>11/10/2018</td>
             <td>3:20:00</td>
             <td>Sólidos Disueltos Totales</td>
             <td>1010</td>
-            <td><input type="text" placeholder="Niguna" style="border: none"></td>
+            <td>
+              <span class="badge badge-primary pull-right hidden-sm-down hidden-xs-down" style="margin: 20px">VISTO</span>
+            </td>
           </tr>
           <tr>
-            <td>02/10/2018</td>
+            <td>02/09/2018</td>
             <td>12:10:00</td>
             <td>Turbiedad</td>
             <td>1</td>
-            <td><input type="text" placeholder="Niguna" style="border: none"></td>
+            <td>
+              <span class="badge badge-primary pull-right hidden-sm-down hidden-xs-down" style="margin: 20px">VISTO</span>
+            </td>
           </tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
-  <div class="x_panel" style=" width: 45%; margin-right: 10px">
+  <!--dato con su norma de la alerta actual-->
+  <div class="x_panel col-lg-6 col-md-6" style=" width: 45%; margin-right: 10px">
     <h1>NB-512</h1>
-    <div *ngFor="let estado1 of estados">
-      {{estado1._id}}
+    <div *ngFor="let sensor of alerta ">
+      {{"1000 mg/l"}}
     </div>
+    1000 mg/l
   </div>
-  <div class="x_panel" style=" width: 54%">
+  <!--dato del sensor que esta en alerta-->
+  <div class="x_panel col-lg-6  col-md-6" style=" width: 54%">
     <h1>Nueva alerta</h1>
-    <div *ngFor="let estado2 of estados">
-      {{estado2._id}}PH
+    <div *ngFor="let sensor of alerta">
+      {{1530+"mg/l"}}
     </div>
-  </div>
+    1530 mg/l
+  </div><br><br><br>
 </div>
 </div>

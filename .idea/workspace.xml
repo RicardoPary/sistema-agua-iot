@@ -4,15 +4,8 @@
     <list default="true" id="b27d6fa0-7187-4527-9e4a-926c7429441c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/dato-sdt/dato-sdt.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/dato-sdt/dato-sdt.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/dato-sdt/dato-sdt.component.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/dato-sdt/dato-sdt.component.ts" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/datos-conduct/datos-conduct.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/datos-conduct/datos-conduct.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/datos-conduct/datos-conduct.component.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/datos-conduct/datos-conduct.component.ts" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.ts" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/graphics-dos/graphics-dos.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/graphics-dos/graphics-dos.component.html" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/graphics-tres/graphics-tres.component.html" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/graphics-tres/graphics-tres.component.html" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.ts" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/pages.component.ts" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/pages.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -95,54 +88,125 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="datos-temp.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.html">
+      <file leaf-file-name="alertas.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            <state relative-caret-position="407">
+              <caret line="99" column="20" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#4;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#4;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/pages.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="728">
+              <caret line="92" column="87" lean-forward="false" selection-start-line="92" selection-start-column="87" selection-end-line="92" selection-end-column="87" />
+              <folding>
+                <marker date="1543760224601" expanded="true" signature="188:7341" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="230:7330" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="356:5353" ph="..." />
+                <marker date="1543760224601" expanded="false" signature="377:390" ph="..." />
+                <marker date="1543760224601" expanded="false" signature="447:474" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="514:5338" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="551:817" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="601:799" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="847:1595" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="950:1212" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="1285:1577" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="1306:1427" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="1341:1422" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="1448:1557" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="1483:1552" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="1626:2908" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="1727:1988" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="2060:2890" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="2521:2641" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="2939:3632" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="3042:3208" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="3281:3614" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="3663:4258" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="3766:4037" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="4110:4240" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="4289:4783" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="4392:4560" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="4633:4765" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="4827:5320" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="4940:5105" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="5183:5302" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="5463:7316" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="5527:6955" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="5563:5688" ph="..." />
+                <marker date="1543760224601" expanded="false" signature="5628:5643" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="5723:5899" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="5834:5880" ph="..." />
+                <marker date="1543760224601" expanded="false" signature="5863:5879" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="5934:6040" ph="..." />
+                <marker date="1543760224601" expanded="false" signature="5981:5997" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6075:6934" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6113:6915" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6154:6381" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6184:6359" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6423:6653" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6453:6631" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6675:6894" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6751:6872" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="6985:7046" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="7076:7300" ph="..." />
+                <marker date="1543760224601" expanded="true" signature="7132:7283" ph="..." />
+                <marker date="1543760224601" expanded="false" signature="7188:7194" ph="©" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alertas.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1036">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reporte.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/reporte/reporte.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datos-turbiedad.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.html">
+      <file leaf-file-name="datos-temp.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="968">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alertas.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html">
+      <file leaf-file-name="datos-temp.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#4;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#4;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registro-gral.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/registro-gral/registro-gral.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="106" column="17" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="106" selection-end-column="17" />
-              <folding>
-                <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="277">
+              <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,7 +215,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Inicio</find>
       <find>es</find>
       <find>dibujo5</find>
       <find>4</find>
@@ -181,6 +244,7 @@
       <find>avg</find>
       <find>Conducti</find>
       <find>fixed_height_320</find>
+      <find>10</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,7 +253,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Frontend/src/app/components/figura/figura.component.html" />
         <option value="$PROJECT_DIR$/Frontend/package.json" />
         <option value="$PROJECT_DIR$/Backend/routes/api.js" />
         <option value="$PROJECT_DIR$/Backend/routes/alerta.js" />
@@ -211,7 +274,6 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/shared/components/header.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/shared/components/sidebar.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/pages.module.ts" />
-        <option value="$PROJECT_DIR$/Frontend/src/app/pages/pages.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/environments/environment.prod.ts" />
         <option value="$PROJECT_DIR$/Backend/routes/usuario.js" />
         <option value="$PROJECT_DIR$/Frontend/src/app/shared/services/sensor.service.ts" />
@@ -230,7 +292,6 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/datos-ph/datos-ph.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/datos-ph/datos-ph.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/registro-gral/registro-gral.component.html" />
-        <option value="$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/dato-sdt/dato-sdt.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/datos-conduct/datos-conduct.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.html" />
@@ -240,6 +301,9 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/datos-conduct/datos-conduct.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/pages/pages.component.ts" />
       </list>
     </option>
   </component>
@@ -332,33 +396,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="dato-sdt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sistema-agua-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sistema-agua-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="datos-conduct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sistema-agua-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sistema-agua-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="datos-ph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sistema-agua-iot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sistema-agua-iot" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="datos-temp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -368,7 +405,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="datos-turbiedad" type="462c0819:PsiDirectoryNode" />
+              <item name="reporte" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -466,7 +503,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127537000" />
+    <option name="totallyTimeSpent" value="131283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -516,67 +553,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/pages.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-          <folding>
-            <marker date="1543754964109" expanded="true" signature="188:7642" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="230:7631" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="356:5654" ph="..." />
-            <marker date="1543754964109" expanded="false" signature="377:390" ph="..." />
-            <marker date="1543754964109" expanded="false" signature="447:474" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="514:5639" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="551:817" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="601:799" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="847:1595" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="950:1212" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="1285:1577" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="1306:1427" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="1341:1422" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="1448:1557" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="1483:1552" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="1626:2908" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="1727:1988" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="2060:2890" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="2521:2641" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="2939:3732" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="3042:3308" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="3381:3714" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="3763:4359" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="3866:4138" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="4211:4341" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="4390:4984" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="4493:4761" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="4834:4966" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="5028:5621" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="5141:5406" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="5484:5603" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="5764:7617" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="5828:7256" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="5864:5989" ph="..." />
-            <marker date="1543754964109" expanded="false" signature="5929:5944" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6024:6200" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6135:6181" ph="..." />
-            <marker date="1543754964109" expanded="false" signature="6164:6180" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6235:6341" ph="..." />
-            <marker date="1543754964109" expanded="false" signature="6282:6298" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6376:7235" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6414:7216" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6455:6682" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6485:6660" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6724:6954" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6754:6932" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="6976:7195" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="7052:7173" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="7286:7347" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="7377:7601" ph="..." />
-            <marker date="1543754964109" expanded="true" signature="7433:7584" ph="..." />
-            <marker date="1543754964109" expanded="false" signature="7489:7495" ph="©" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/core/components/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -805,43 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/reporte/reporte.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="50" column="27" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/registro-gral/registro-gral.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="106" column="17" lean-forward="false" selection-start-line="66" selection-start-column="12" selection-end-line="106" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/graphics/graphics.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2738">
@@ -879,7 +818,7 @@
         <state relative-caret-position="526">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -889,16 +828,8 @@
         <state relative-caret-position="1105">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-409">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +854,7 @@
         <state relative-caret-position="-238">
           <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -933,32 +864,140 @@
         <state relative-caret-position="-204">
           <caret line="11" column="51" lean-forward="false" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#4;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#4;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-turbiedad/datos-turbiedad.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="493">
+          <caret line="54" column="6" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/registro-gral/registro-gral.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="21" lean-forward="true" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/reporte/reporte.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="51" column="38" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/datos-temp/datos-temp.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/alertas/alertas.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="99" column="20" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#td#4;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/pages/pages.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="92" column="87" lean-forward="false" selection-start-line="92" selection-start-column="87" selection-end-line="92" selection-end-column="87" />
+          <folding>
+            <marker date="1543760224601" expanded="true" signature="188:7341" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="230:7330" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="356:5353" ph="..." />
+            <marker date="1543760224601" expanded="false" signature="377:390" ph="..." />
+            <marker date="1543760224601" expanded="false" signature="447:474" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="514:5338" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="551:817" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="601:799" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="847:1595" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="950:1212" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="1285:1577" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="1306:1427" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="1341:1422" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="1448:1557" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="1483:1552" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="1626:2908" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="1727:1988" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="2060:2890" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="2521:2641" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="2939:3632" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="3042:3208" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="3281:3614" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="3663:4258" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="3766:4037" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="4110:4240" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="4289:4783" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="4392:4560" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="4633:4765" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="4827:5320" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="4940:5105" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="5183:5302" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="5463:7316" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="5527:6955" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="5563:5688" ph="..." />
+            <marker date="1543760224601" expanded="false" signature="5628:5643" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="5723:5899" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="5834:5880" ph="..." />
+            <marker date="1543760224601" expanded="false" signature="5863:5879" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="5934:6040" ph="..." />
+            <marker date="1543760224601" expanded="false" signature="5981:5997" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6075:6934" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6113:6915" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6154:6381" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6184:6359" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6423:6653" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6453:6631" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6675:6894" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6751:6872" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="6985:7046" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="7076:7300" ph="..." />
+            <marker date="1543760224601" expanded="true" signature="7132:7283" ph="..." />
+            <marker date="1543760224601" expanded="false" signature="7188:7194" ph="©" />
           </folding>
         </state>
       </provider>
