@@ -41,11 +41,11 @@
           </tr>
           </thead>
           <tbody>
-          <tr *ngFor="let estado of estados">
-            <td>{{estado.marca}}</td>
-            <td>{{estado.modelo}}</td>
-            <td>{{estado.tipo}}</td>
-            <td>{{estado.color}}</td>
+          <tr *ngFor="let sensor of sensores">
+            <td>{{sensor.hora}}</td>
+            <td>{{sensor.turbidez}}</td>
+            <td>{{"0"}}</td>
+            <td>{{avgTurbidez | number:'1.1'}}</td>
           </tr>
           </tbody>
         </table>
@@ -58,14 +58,14 @@
 
 <div style="padding:20px;">
 
+  <!--
+  <input #search class="search" type="text" placeholder="Search..." (keydown.enter)="onSearch(search.value)">
 
-<input #search class="search" type="text" placeholder="Search..." (keydown.enter)="onSearch(search.value)">
-<!--
-<ng2-smart-table
-            [settings]="settings"
-            [source]="source">
-</ng2-smart-table>
--->
+  <ng2-smart-table
+              [settings]="settings"
+              [source]="source">
+  </ng2-smart-table>
+  -->
 
 </div>
 

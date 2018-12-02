@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AutosService} from '../../shared/services/autos.service';
+import {SensorService} from "../../shared/services/sensor.service";
 
 @Component({
   selector: 'app-datos-turbiedad',
@@ -8,46 +9,57 @@ import {AutosService} from '../../shared/services/autos.service';
 })
 export class DatosTurbiedadComponent implements OnInit {
 
-  estados: any;
+  sensores: any;
 
-  settings = {
-    add: {
-      addButtonContent: '<i class="fa fa-plus fa-lg"></i>',
-      createButtonContent: 'Create',
-      cancelButtonContent: 'Cancel',
-    },
-    edit: {
-      editButtonContent: '<i class="fa fa-pencil-square fa-lg"></i>',
-      saveButtonContent: 'Update',
-      cancelButtonContent: 'Cancel',
-    },
-    delete: {
-      deleteButtonContent: '<i class="fa fa-trash fa-lg"></i>',
-      confirmDelete: true
-    },
-    columns: {
-      grupo: {title: 'Grupo', filter: false},
-      flujo: {title: 'Flujo', filter: false},
-      rfid: {title: 'RFID', filter: false},
-      prioridad: {title: 'Prioridad', filter: false},
-      placa: {title: 'Placa', filter: false},
-      tipo: {title: 'Tipo', filter: false},
-      carnet: {title: 'Carnet', filter: false},
-      otro: {title: 'Otro', filter: false},
-      fecha: {title: 'Fecha', filter: false},
-      hora: {title: 'Hora', filter: false}
-    }
-  };
+  avgConductividad: any;
+  avgPH: any;
+  avgTemperatura: any;
+  avgTurbidez: any;
 
-  constructor(private flujoRegistro: AutosService) {
+  currentConductividad: any;
+  currentPH: any;
+  currentTemperatura: any;
+  currentTurbidez: any;
 
+  avgDates: any;
+  currentDates: any;
+
+  constructor(private flujo: AutosService,
+              private sensor: SensorService,
+              private sensorService: SensorService) {
   }
 
   ngOnInit() {
+
+    this.sensorService.getAllSensores().subscribe(
+      res => this.sensores = res.body
+    );
+    this.avgDates = setInterval(() => {
+      this.sensorService.getAllSensoresAVG().subscribe(
+        res => {
+          this.avgConductividad = res.body[0].conductividad;
+          this.avgPH = res.body[0].ph;
+          this.avgTemperatura = res.body[0].temperatura;
+          this.avgTurbidez = res.body[0].turbidez;
+        }
+      );
+    }, 2000);
+
+    this.currentDates = setInterval(() => {
+      this.sensorService.getAllSensoresCurrent().subscribe(
+        res => {
+          this.currentConductividad = res.body[0].conductividad;
+          this.currentPH = res.body[0].ph;
+          this.currentTemperatura = res.body[0].temperatura;
+          this.currentTurbidez = res.body[0].turbidez;
+        }
+      );
+    }, 2000);
   }
 
-  onSearch(query: string = '') {
-
+  ngOnDestroy() {
+    clearInterval(this.avgDates);
+    clearInterval(this.currentDates);
   }
 }
 
