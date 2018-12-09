@@ -9,6 +9,7 @@ const muestra = require('./routes/muestra');
 const registro = require('./routes/registro');
 const sensor = require('./routes/sensor');
 const usuario = require('./routes/usuario');
+const norma = require('./routes/norma');
 
 const app = express();
 
@@ -35,7 +36,7 @@ app.use('/muestra', muestra);
 app.use('/registro', registro);
 app.use('/sensor', sensor);
 app.use('/usuario', usuario);
-
+app.use('/norma', norma);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
