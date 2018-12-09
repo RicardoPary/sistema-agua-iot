@@ -47,8 +47,8 @@ export class GraphicsTresComponent implements OnInit {
     var date = new Date();
     var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
     var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-    var auxFirstDay = firstDay.getFullYear() + "-" + ((firstDay.getMonth()) + 1) + "-" + firstDay.getDate();
-    var auxLastDay = lastDay.getFullYear() + "-" + ((lastDay.getMonth()) + 1) + "-" + lastDay.getDate();
+    var auxFirstDay = this.getDateFilter(firstDay);
+    var auxLastDay = this.getDateFilter(lastDay);
 
     this.sensorService.getAllSensoresByDate(auxFirstDay, auxLastDay).subscribe(res => {
       this.lineChartData = [
@@ -63,5 +63,12 @@ export class GraphicsTresComponent implements OnInit {
       this.lineChartData[2].data = this.getSensorData(res.body, 'turbidez');
       this.lineChartData[3].data = this.getSensorData(res.body, 'conductividad');
     });
+  }
+
+  getDateFilter(date: any) {
+    const month = (date.getMonth() + 1) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1);
+    const day = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    const year = date.getFullYear();
+    return year + '-' + month + '-' + day;
   }
 }

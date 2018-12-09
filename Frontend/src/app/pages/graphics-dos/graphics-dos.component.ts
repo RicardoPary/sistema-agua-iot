@@ -46,8 +46,8 @@ export class GraphicsDosComponent implements OnInit {
   loadChart() {
     var firstDay = this.startOfWeek(new Date());
     var lastDay = this.lastOfWeek(new Date());
-    var auxFirstDay = firstDay.getFullYear() + "-" + ((firstDay.getMonth()) + 1) + "-" + firstDay.getDate();
-    var auxLastDay = lastDay.getFullYear() + "-" + ((lastDay.getMonth()) + 1) + "-" + lastDay.getDate();
+    var auxFirstDay = this.getDateFilter(firstDay);
+    var auxLastDay = this.getDateFilter(lastDay);
 
     this.sensorService.getAllSensoresByDate(auxFirstDay, auxLastDay).subscribe(res => {
       this.lineChartData = [
@@ -72,5 +72,12 @@ export class GraphicsDosComponent implements OnInit {
   lastOfWeek(date) {
     var diff = date.getDate() + (date.getDay() === 0 ? 0 : 7 - date.getDay());
     return new Date(date.setDate(diff));
+  }
+
+  getDateFilter(date: any) {
+    const month = (date.getMonth() + 1) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1);
+    const day = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    const year = date.getFullYear();
+    return year + '-' + month + '-' + day;
   }
 }

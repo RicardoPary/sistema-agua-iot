@@ -16,8 +16,9 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/:temperatura/:ph/:turbidez/:conductividad', function (req, res) {
+
     var dato = new Date();
-    var fecha = dato.getFullYear() + "-" + ((dato.getMonth()) + 1) + "-" + dato.getDate();
+    var fecha = dato.getFullYear() + "-" + (date.getMonth() + 1) < 10 ? '0' + (date.getMonth() + 1) : (date.getMonth() + 1) + "-" + date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
     var hora = dato.getHours() + ":" + dato.getMinutes() + ":" + dato.getSeconds();
 
     sensor.sensor.insert({
