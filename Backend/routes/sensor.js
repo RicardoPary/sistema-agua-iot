@@ -84,4 +84,16 @@ router.get('/avg/:fromdate/:todate', function (req, res) {
         });
 });
 
+router.get('/:fromdate/:todate', function (req, res) {
+    sensor.sensor.aggregate(
+        [
+            {"$match": {"fecha": {"$gte": req.params.fromdate, "$lte": req.params.todate}}}
+        ], function (err, data) {
+            if (err) {
+                respuesta.send(err);
+            }
+            res.json(data);
+        });
+});
+
 module.exports = router;

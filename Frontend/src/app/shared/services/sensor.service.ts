@@ -20,6 +20,10 @@ export class SensorService {
     return this.http.get(`${this.urlResource}/avg`, {observe: 'response'});
   }
 
+  getAllSensoresByDate(fromDate, toDate): Observable<HttpResponse<any>> {
+    return this.http.get(`${this.urlResource}/${fromDate}/${toDate}`, {observe: 'response'});
+  }
+
   getAllSensoresCurrent(): Observable<HttpResponse<any>> {
     return this.http.get(`${this.urlResource}/current`, {observe: 'response'});
   }

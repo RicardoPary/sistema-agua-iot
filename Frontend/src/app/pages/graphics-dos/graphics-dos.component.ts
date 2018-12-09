@@ -1,7 +1,5 @@
-
-import { Component, OnInit } from '@angular/core';
-import { AutosService } from '../../shared/services/autos.service';
-import { Router,ActivatedRoute} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {SensorService} from "../../shared/services/sensor.service";
 
 @Component({
   selector: 'app-graphics-dos',
@@ -10,28 +8,69 @@ import { Router,ActivatedRoute} from '@angular/router';
 })
 export class GraphicsDosComponent implements OnInit {
 
-  public id:any;
+  data: any = [];
+  id: any;
 
-  estados: any = [];
-  constructor(private postEstados: AutosService,private route:ActivatedRoute, private router:Router) {
+  lineChartData: Array<any> = [];
+  lineChartLabels: Array<any> = [];
+  lineChartOptions: any = {responsive: true};
+  lineChartLegend = true;
+  lineChartType = 'line';
 
+  constructor(private sensorService: SensorService) {
 
   }
 
   ngOnInit() {
+    this.loadChart();
+    this.id = setInterval(() => {
+      this.loadChart();
+    }, 1000);
 
-   /*   this.route.queryParams.subscribe(
-          (queryParams:any)=>{
-            this.id=queryParams['id'];
-          }
-        );
-  	  this.postEstados.getAuto(this.id).subscribe(estados => {
-      this.estados = estados;
-  	  });*/
   }
 
+  ngOnDestroy() {
+    if (this.id) {
+      clearInterval(this.id);
+    }
+  }
 
+  getSensorData(data, type: any): Array<any> {
+    let dataAux: Array<any> = new Array();
+    for (let i = 0; i < data.length; i++) {
+      dataAux[i] = data[i][type];
+    }
+    return dataAux;
+  }
+
+  loadChart() {
+    var firstDay = this.startOfWeek(new Date());
+    var lastDay = this.lastOfWeek(new Date());
+    var auxFirstDay = firstDay.getFullYear() + "-" + ((firstDay.getMonth()) + 1) + "-" + firstDay.getDate();
+    var auxLastDay = lastDay.getFullYear() + "-" + ((lastDay.getMonth()) + 1) + "-" + lastDay.getDate();
+
+    this.sensorService.getAllSensoresByDate(auxFirstDay, auxLastDay).subscribe(res => {
+      this.lineChartData = [
+        {data: [null], label: 'Temperatura'},
+        {data: [null], label: 'PH'},
+        {data: [null], label: 'Turbidez'},
+        {data: [null], label: 'Conductividad'}
+      ];
+      this.lineChartLabels = this.getSensorData(res.body, 'fecha');
+      this.lineChartData[0].data = this.getSensorData(res.body, 'temperatura');
+      this.lineChartData[1].data = this.getSensorData(res.body, 'ph');
+      this.lineChartData[2].data = this.getSensorData(res.body, 'turbidez');
+      this.lineChartData[3].data = this.getSensorData(res.body, 'conductividad');
+    });
+  }
+
+  startOfWeek(date) {
+    var diff = date.getDate() - date.getDay() + (date.getDay() === 0 ? -6 : 1);
+    return new Date(date.setDate(diff));
+  }
+
+  lastOfWeek(date) {
+    var diff = date.getDate() + (date.getDay() === 0 ? 0 : 7 - date.getDay());
+    return new Date(date.setDate(diff));
+  }
 }
-
-
-
