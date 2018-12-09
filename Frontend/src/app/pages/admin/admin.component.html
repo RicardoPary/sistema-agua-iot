@@ -29,45 +29,6 @@
       </span>
     </div>
 
-    <div class="three col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
-      <span class="count_top_c">
-      <i class="fa fa-clock-o"></i> Conductividad
-      </span>
-      <div class="count green">
-        {{currentConductividad | number:'3.1-2'}}
-        <img src="../../../assets/conducti.png"/>
-      </div>
-      <span class="count_bottom">
-      <i class="green">{{currentConductividad | number:'3.1-2'}} µS/cm </i> Ahora
-      </span>
-    </div>
-
-    <div class="four col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
-      <span class="count_top_c">
-      <i class="fa fa-clock-o"></i> Sólidos Disueltos Totales
-      </span>
-      <div class="count">
-        {{registro_flujo_pesado}}
-        <img src="../../../assets/sdt.png"/>
-      </div>
-      <span class="count_bottom">
-      <i class="green">{{(currentConductividad*0.5) | number:'3.1-2' }}ppm </i> Ahora
-      </span>
-    </div>
-
-    <div class="five col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
-      <span class="count_top_c">
-      <i class="fa fa-clock-o"></i> Salinidad
-      </span>
-      <div class="count green">
-        {{registro_flujo_ambulancia}}
-        <img src="../../../assets/conducti.png"/>
-      </div>
-      <span class="count_bottom">
-      <i class="green">{{(currentConductividad*0)+0.5 | number:'1.2' }}PSU </i> Ahora
-      </span>
-    </div>
-
     <div class="six col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 tile_stats_count_p">
       <span class="count_top_c">
       <i class="fa fa-clock-o"></i> Turbiedad
@@ -78,6 +39,32 @@
       </div>
       <span class="count_bottom">
       <i class="green">{{currentTurbidez | number:'1.1'}} UNT </i> Ahora
+      </span>
+    </div>
+
+    <div class="three col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tile_stats_count_p">
+      <span class="count_top_c">
+      <i class="fa fa-clock-o"></i> Conductividad
+      </span>
+      <div class="count green">
+        {{currentConductividad | number:'3.1-2'}}
+        <img src="../../../assets/conducti.png" style="margin: 0 25% "/>
+      </div>
+      <span class="count_bottom">
+      <i class="green">{{currentConductividad | number:'3.1-2'}} µS/cm </i> Ahora
+      </span>
+    </div>
+
+    <div class="five col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tile_stats_count_p">
+      <span class="count_top_c" style="color: #000;">
+      <i class="fa fa-clock-o"></i> Sólidos Disueltos Totales
+      </span>
+      <div class="count green">
+        {{registro_flujo_pesado}}
+        <img src="../../../assets/sdt.png" style="margin: 0 25%"/>
+      </div>
+      <span class="count_bottom">
+      <i class="green">{{(currentConductividad*0.5) | number:'3.1-2' }}ppm </i> Ahora
       </span>
     </div>
 
@@ -99,30 +86,23 @@
 
     <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
       <span class="count_top">
+      <i class="fa fa-balance-scale"></i>  Prom. de Turbiedad
+      </span>
+      <div class="count">{{avgTurbidez | number:'1.1'}} UNT</div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-6 col-xl-6 tile_stats_count"  style="padding: 0 15%">
+      <span class="count_top" >
       <i class="fa fa-balance-scale"></i>  Prom. de Conductividad
       </span>
       <div class="count">{{avgConductividad | number:'3.1-2'}}µS/cm</div>
     </div>
 
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
+    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-6 col-xl-6 tile_stats_count" style="padding: 0 15%">
       <span class="count_top">
       <i class="fa fa-balance-scale"></i>  Promedio de SDT
       </span>
       <div class="count">{{avgConductividad*0.5 | number:'3.1-2'}} ppm</div>
-    </div>
-
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-balance-scale"></i>  Prom. de Salinidad
-      </span>
-      <div class="count">{{avgConductividad*0+0.5 | number:'1.2'}}PSU</div>
-    </div>
-
-    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-xl-4 tile_stats_count">
-      <span class="count_top">
-      <i class="fa fa-balance-scale"></i>  Prom. de Turbiedad
-      </span>
-      <div class="count">{{avgTurbidez | number:'1.1'}} UNT</div>
     </div>
 
   </div>
