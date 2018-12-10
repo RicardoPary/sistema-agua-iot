@@ -9,11 +9,24 @@ import {SensorService} from "../../shared/services/sensor.service";
 export class ReporteComponent implements OnInit {
 
   sensores: any;
+  id: any;
 
   constructor(private sensorService: SensorService) {
   }
 
   ngOnInit() {
+    this.id = setInterval(() => {
+      this.loadChart();
+    }, 1000);
+  }
+
+  ngOnDestroy() {
+    if (this.id) {
+      clearInterval(this.id);
+    }
+  }
+
+  loadChart() {
     this.sensorService.getAllSensores().subscribe(
       res => this.sensores = res.body
     );
